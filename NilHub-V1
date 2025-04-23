@@ -1,0 +1,3843 @@
+-- imie his Gui to Lua
+-- Version: 1
+
+-- Instances:
+
+local MainGui = {
+	MainGui = Instance.new("ScreenGui"),
+	MainFrame = Instance.new("Frame"),
+	MenuFrame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	Background = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	PlayerInfo = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	Username = Instance.new("TextLabel"),
+	DisplayName = Instance.new("TextLabel"),
+	Premium = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
+	UICorner_4 = Instance.new("UICorner"),
+	Premium_2 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint"),
+	UICorner_5 = Instance.new("UICorner"),
+	NIL = Instance.new("TextLabel"),
+	Bar = Instance.new("Frame"),
+	UICorner_6 = Instance.new("UICorner"),
+	UIGradient = Instance.new("UIGradient"),
+	Bar2 = Instance.new("Frame"),
+	UICorner_7 = Instance.new("UICorner"),
+	UIGradient_2 = Instance.new("UIGradient"),
+	UIStroke = Instance.new("UIStroke"),
+	Buttons = Instance.new("ScrollingFrame"),
+	UICorner_8 = Instance.new("UICorner"),
+	UIListLayout = Instance.new("UIListLayout"),
+	Eggs = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	Eggstex = Instance.new("TextLabel"),
+	EggButton = Instance.new("TextButton"),
+	Icon = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint"),
+	Bar_2 = Instance.new("Frame"),
+	UICorner_10 = Instance.new("UICorner"),
+	UIGradient_3 = Instance.new("UIGradient"),
+	AutoFarm1 = Instance.new("Frame"),
+	UICorner_11 = Instance.new("UICorner"),
+	AutoFarmText = Instance.new("TextLabel"),
+	AutoFarmButton = Instance.new("TextButton"),
+	Icon_2 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint"),
+	Bar_3 = Instance.new("Frame"),
+	UICorner_12 = Instance.new("UICorner"),
+	UIGradient_4 = Instance.new("UIGradient"),
+	Event = Instance.new("Frame"),
+	UICorner_13 = Instance.new("UICorner"),
+	EventButtonText = Instance.new("TextLabel"),
+	EventButton = Instance.new("TextButton"),
+	EventIcon = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint"),
+	Bar_4 = Instance.new("Frame"),
+	UICorner_14 = Instance.new("UICorner"),
+	UIGradient_5 = Instance.new("UIGradient"),
+	HugeHunter = Instance.new("Frame"),
+	UICorner_15 = Instance.new("UICorner"),
+	HugeHunterText = Instance.new("TextLabel"),
+	HugeHunterButton = Instance.new("TextButton"),
+	Icon_3 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint"),
+	Bar_5 = Instance.new("Frame"),
+	UICorner_16 = Instance.new("UICorner"),
+	UIGradient_6 = Instance.new("UIGradient"),
+	Misc = Instance.new("Frame"),
+	UICorner_17 = Instance.new("UICorner"),
+	Misctext = Instance.new("TextLabel"),
+	MiscButton = Instance.new("TextButton"),
+	Icon_4 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint"),
+	Bar_6 = Instance.new("Frame"),
+	UICorner_18 = Instance.new("UICorner"),
+	UIGradient_7 = Instance.new("UIGradient"),
+	TradeScam = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	TradeScamText = Instance.new("TextLabel"),
+	TradeScamButton = Instance.new("TextButton"),
+	Icon_5 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint"),
+	Bar_7 = Instance.new("Frame"),
+	UICorner_20 = Instance.new("UICorner"),
+	UIGradient_8 = Instance.new("UIGradient"),
+	Minimize = Instance.new("TextButton"),
+	UICorner_21 = Instance.new("UICorner"),
+	UIStroke_2 = Instance.new("UIStroke"),
+	Close = Instance.new("TextButton"),
+	UICorner_22 = Instance.new("UICorner"),
+	UIStroke_3 = Instance.new("UIStroke"),
+	ImageLabel = Instance.new("ImageLabel"),
+	UICorner_23 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint"),
+	BGSPWN = Instance.new("Frame"),
+	UICorner_24 = Instance.new("UICorner"),
+	UIStroke_4 = Instance.new("UIStroke"),
+	AutoFarm = Instance.new("ScrollingFrame"),
+	UICorner_25 = Instance.new("UICorner"),
+	UIListLayout_2 = Instance.new("UIListLayout"),
+	AMain = Instance.new("TextLabel"),
+	AutoClaim = Instance.new("Frame"),
+	Text = Instance.new("TextLabel"),
+	WhiteBar = Instance.new("Frame"),
+	UIGradient_9 = Instance.new("UIGradient"),
+	Frame23 = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	UIGradient_10 = Instance.new("UIGradient"),
+	ColorFrame = Instance.new("Frame"),
+	UICorner_27 = Instance.new("UICorner"),
+	UIGradient_11 = Instance.new("UIGradient"),
+	Button = Instance.new("TextButton"),
+	UICorner_28 = Instance.new("UICorner"),
+	OnOrOff = Instance.new("TextLabel"),
+	UICorner_29 = Instance.new("UICorner"),
+	UIGradient_12 = Instance.new("UIGradient"),
+	AutoClimb = Instance.new("Frame"),
+	Text_2 = Instance.new("TextLabel"),
+	WhiteBar_2 = Instance.new("Frame"),
+	UIGradient_13 = Instance.new("UIGradient"),
+	Frame4 = Instance.new("Frame"),
+	UICorner_30 = Instance.new("UICorner"),
+	UIGradient_14 = Instance.new("UIGradient"),
+	ColorFrame_2 = Instance.new("Frame"),
+	UICorner_31 = Instance.new("UICorner"),
+	UIGradient_15 = Instance.new("UIGradient"),
+	Button_2 = Instance.new("TextButton"),
+	UICorner_32 = Instance.new("UICorner"),
+	OnOrOff_2 = Instance.new("TextLabel"),
+	UICorner_33 = Instance.new("UICorner"),
+	UIGradient_16 = Instance.new("UIGradient"),
+	AutoCollectOrbs = Instance.new("Frame"),
+	Text_3 = Instance.new("TextLabel"),
+	WhiteBar_3 = Instance.new("Frame"),
+	UIGradient_17 = Instance.new("UIGradient"),
+	Frame5 = Instance.new("Frame"),
+	UICorner_34 = Instance.new("UICorner"),
+	UIGradient_18 = Instance.new("UIGradient"),
+	ColorFrame_3 = Instance.new("Frame"),
+	UICorner_35 = Instance.new("UICorner"),
+	UIGradient_19 = Instance.new("UIGradient"),
+	Button_3 = Instance.new("TextButton"),
+	UICorner_36 = Instance.new("UICorner"),
+	OnOrOff_3 = Instance.new("TextLabel"),
+	UICorner_37 = Instance.new("UICorner"),
+	UIGradient_20 = Instance.new("UIGradient"),
+	FastPets = Instance.new("Frame"),
+	Text_4 = Instance.new("TextLabel"),
+	WhiteBar_4 = Instance.new("Frame"),
+	UIGradient_21 = Instance.new("UIGradient"),
+	Frame6 = Instance.new("Frame"),
+	UICorner_38 = Instance.new("UICorner"),
+	UIGradient_22 = Instance.new("UIGradient"),
+	ColorFrame_4 = Instance.new("Frame"),
+	UICorner_39 = Instance.new("UICorner"),
+	UIGradient_23 = Instance.new("UIGradient"),
+	Button_4 = Instance.new("TextButton"),
+	UICorner_40 = Instance.new("UICorner"),
+	OnOrOff_4 = Instance.new("TextLabel"),
+	UICorner_41 = Instance.new("UICorner"),
+	UIGradient_24 = Instance.new("UIGradient"),
+	EnableAutoFarm = Instance.new("Frame"),
+	Text_5 = Instance.new("TextLabel"),
+	WhiteBar_5 = Instance.new("Frame"),
+	UIGradient_25 = Instance.new("UIGradient"),
+	Frame7 = Instance.new("Frame"),
+	UICorner_42 = Instance.new("UICorner"),
+	UIGradient_26 = Instance.new("UIGradient"),
+	ColorFrame_5 = Instance.new("Frame"),
+	UICorner_43 = Instance.new("UICorner"),
+	UIGradient_27 = Instance.new("UIGradient"),
+	Button_5 = Instance.new("TextButton"),
+	UICorner_44 = Instance.new("UICorner"),
+	OnOrOff_5 = Instance.new("TextLabel"),
+	UICorner_45 = Instance.new("UICorner"),
+	UIGradient_28 = Instance.new("UIGradient"),
+	NoClip = Instance.new("Frame"),
+	Text_6 = Instance.new("TextLabel"),
+	WhiteBar_6 = Instance.new("Frame"),
+	UIGradient_29 = Instance.new("UIGradient"),
+	Frame8 = Instance.new("Frame"),
+	UICorner_46 = Instance.new("UICorner"),
+	UIGradient_30 = Instance.new("UIGradient"),
+	ColorFrame_6 = Instance.new("Frame"),
+	UICorner_47 = Instance.new("UICorner"),
+	UIGradient_31 = Instance.new("UIGradient"),
+	Button_6 = Instance.new("TextButton"),
+	UICorner_48 = Instance.new("UICorner"),
+	OnOrOff_6 = Instance.new("TextLabel"),
+	UICorner_49 = Instance.new("UICorner"),
+	UIGradient_32 = Instance.new("UIGradient"),
+	Eggs_2 = Instance.new("ScrollingFrame"),
+	UICorner_50 = Instance.new("UICorner"),
+	UIListLayout_3 = Instance.new("UIListLayout"),
+	AEggs = Instance.new("TextLabel"),
+	FastHatch = Instance.new("Frame"),
+	FastHatch_2 = Instance.new("TextLabel"),
+	WhiteBar_7 = Instance.new("Frame"),
+	UIGradient_33 = Instance.new("UIGradient"),
+	OnOrOff_7 = Instance.new("TextLabel"),
+	UICorner_51 = Instance.new("UICorner"),
+	UIGradient_34 = Instance.new("UIGradient"),
+	Frame8_2 = Instance.new("Frame"),
+	UICorner_52 = Instance.new("UICorner"),
+	UIGradient_35 = Instance.new("UIGradient"),
+	ColorFrame_7 = Instance.new("Frame"),
+	UICorner_53 = Instance.new("UICorner"),
+	UIGradient_36 = Instance.new("UIGradient"),
+	Button_7 = Instance.new("TextButton"),
+	UICorner_54 = Instance.new("UICorner"),
+	EggName = Instance.new("Frame"),
+	Frame9 = Instance.new("Frame"),
+	UICorner_55 = Instance.new("UICorner"),
+	UIGradient_37 = Instance.new("UIGradient"),
+	ColorFrame_8 = Instance.new("Frame"),
+	UICorner_56 = Instance.new("UICorner"),
+	UIGradient_38 = Instance.new("UIGradient"),
+	Button_8 = Instance.new("TextButton"),
+	UICorner_57 = Instance.new("UICorner"),
+	OnOrOff_8 = Instance.new("TextLabel"),
+	UIGradient_39 = Instance.new("UIGradient"),
+	TextBox = Instance.new("TextBox"),
+	UIStroke_5 = Instance.new("UIStroke"),
+	UIGradient_40 = Instance.new("UIGradient"),
+	UICorner_58 = Instance.new("UICorner"),
+	UICorner_59 = Instance.new("UICorner"),
+	WhiteBar_8 = Instance.new("Frame"),
+	UIGradient_41 = Instance.new("UIGradient"),
+	Event_2 = Instance.new("ScrollingFrame"),
+	UICorner_60 = Instance.new("UICorner"),
+	UIListLayout_4 = Instance.new("UIListLayout"),
+	AEvent = Instance.new("TextLabel"),
+	AutoEgg = Instance.new("Frame"),
+	Text_7 = Instance.new("TextLabel"),
+	WhiteBar_9 = Instance.new("Frame"),
+	UIGradient_42 = Instance.new("UIGradient"),
+	Frame23_2 = Instance.new("Frame"),
+	UICorner_61 = Instance.new("UICorner"),
+	UIGradient_43 = Instance.new("UIGradient"),
+	ColorFrame_9 = Instance.new("Frame"),
+	UICorner_62 = Instance.new("UICorner"),
+	UIGradient_44 = Instance.new("UIGradient"),
+	Button_9 = Instance.new("TextButton"),
+	UICorner_63 = Instance.new("UICorner"),
+	OnOrOff_9 = Instance.new("TextLabel"),
+	UICorner_64 = Instance.new("UICorner"),
+	UIGradient_45 = Instance.new("UIGradient"),
+	Upgrade = Instance.new("Frame"),
+	Text_8 = Instance.new("TextLabel"),
+	WhiteBar_10 = Instance.new("Frame"),
+	UIGradient_46 = Instance.new("UIGradient"),
+	Frame4_2 = Instance.new("Frame"),
+	UICorner_65 = Instance.new("UICorner"),
+	UIGradient_47 = Instance.new("UIGradient"),
+	ColorFrame_10 = Instance.new("Frame"),
+	UICorner_66 = Instance.new("UICorner"),
+	UIGradient_48 = Instance.new("UIGradient"),
+	Button_10 = Instance.new("TextButton"),
+	UICorner_67 = Instance.new("UICorner"),
+	OnOrOff_10 = Instance.new("TextLabel"),
+	UICorner_68 = Instance.new("UICorner"),
+	UIGradient_49 = Instance.new("UIGradient"),
+	HugeHunter_2 = Instance.new("ScrollingFrame"),
+	UICorner_69 = Instance.new("UICorner"),
+	UIListLayout_5 = Instance.new("UIListLayout"),
+	AHugeHunter = Instance.new("TextLabel"),
+	EggName_2 = Instance.new("Frame"),
+	WhiteBar_11 = Instance.new("Frame"),
+	UIGradient_50 = Instance.new("UIGradient"),
+	Frame9_2 = Instance.new("Frame"),
+	UICorner_70 = Instance.new("UICorner"),
+	UIGradient_51 = Instance.new("UIGradient"),
+	ColorFrame_11 = Instance.new("Frame"),
+	UICorner_71 = Instance.new("UICorner"),
+	UIGradient_52 = Instance.new("UIGradient"),
+	Button_11 = Instance.new("TextButton"),
+	UICorner_72 = Instance.new("UICorner"),
+	OnOrOff_11 = Instance.new("TextLabel"),
+	UIGradient_53 = Instance.new("UIGradient"),
+	TextBox_2 = Instance.new("TextBox"),
+	UIStroke_6 = Instance.new("UIStroke"),
+	UIGradient_54 = Instance.new("UIGradient"),
+	UICorner_73 = Instance.new("UICorner"),
+	UICorner_74 = Instance.new("UICorner"),
+	Misc_2 = Instance.new("ScrollingFrame"),
+	UICorner_75 = Instance.new("UICorner"),
+	UIListLayout_6 = Instance.new("UIListLayout"),
+	AEvent_2 = Instance.new("TextLabel"),
+	AutoEgg_2 = Instance.new("Frame"),
+	Text_9 = Instance.new("TextLabel"),
+	WhiteBar_12 = Instance.new("Frame"),
+	UIGradient_55 = Instance.new("UIGradient"),
+	Frame23_3 = Instance.new("Frame"),
+	UICorner_76 = Instance.new("UICorner"),
+	UIGradient_56 = Instance.new("UIGradient"),
+	ColorFrame_12 = Instance.new("Frame"),
+	UICorner_77 = Instance.new("UICorner"),
+	UIGradient_57 = Instance.new("UIGradient"),
+	Button_12 = Instance.new("TextButton"),
+	UICorner_78 = Instance.new("UICorner"),
+	OnOrOff_12 = Instance.new("TextLabel"),
+	UICorner_79 = Instance.new("UICorner"),
+	UIGradient_58 = Instance.new("UIGradient"),
+	Upgrade_2 = Instance.new("Frame"),
+	Text_10 = Instance.new("TextLabel"),
+	WhiteBar_13 = Instance.new("Frame"),
+	UIGradient_59 = Instance.new("UIGradient"),
+	Frame4_3 = Instance.new("Frame"),
+	UICorner_80 = Instance.new("UICorner"),
+	UIGradient_60 = Instance.new("UIGradient"),
+	ColorFrame_13 = Instance.new("Frame"),
+	UICorner_81 = Instance.new("UICorner"),
+	UIGradient_61 = Instance.new("UIGradient"),
+	Button_13 = Instance.new("TextButton"),
+	UICorner_82 = Instance.new("UICorner"),
+	OnOrOff_13 = Instance.new("TextLabel"),
+	UICorner_83 = Instance.new("UICorner"),
+	UIGradient_62 = Instance.new("UIGradient"),
+	TradeScam_2 = Instance.new("ScrollingFrame"),
+	UICorner_84 = Instance.new("UICorner"),
+	UIListLayout_7 = Instance.new("UIListLayout"),
+	AHugeHunter_2 = Instance.new("TextLabel"),
+	EggName_3 = Instance.new("Frame"),
+	WhiteBar_14 = Instance.new("Frame"),
+	UIGradient_63 = Instance.new("UIGradient"),
+	Frame9_3 = Instance.new("Frame"),
+	UICorner_85 = Instance.new("UICorner"),
+	UIGradient_64 = Instance.new("UIGradient"),
+	ColorFrame_14 = Instance.new("Frame"),
+	UICorner_86 = Instance.new("UICorner"),
+	UIGradient_65 = Instance.new("UIGradient"),
+	Button_14 = Instance.new("TextButton"),
+	UICorner_87 = Instance.new("UICorner"),
+	OnOrOff_14 = Instance.new("TextLabel"),
+	UIGradient_66 = Instance.new("UIGradient"),
+	TextBox_3 = Instance.new("TextBox"),
+	UIStroke_7 = Instance.new("UIStroke"),
+	UIGradient_67 = Instance.new("UIGradient"),
+	UICorner_88 = Instance.new("UICorner"),
+	UICorner_89 = Instance.new("UICorner"),
+	FreezeTrade = Instance.new("Frame"),
+	Text_11 = Instance.new("TextLabel"),
+	WhiteBar_15 = Instance.new("Frame"),
+	UIGradient_68 = Instance.new("UIGradient"),
+	Frame8_3 = Instance.new("Frame"),
+	UICorner_90 = Instance.new("UICorner"),
+	UIGradient_69 = Instance.new("UIGradient"),
+	ColorFrame_15 = Instance.new("Frame"),
+	UICorner_91 = Instance.new("UICorner"),
+	UIGradient_70 = Instance.new("UIGradient"),
+	Button_15 = Instance.new("TextButton"),
+	UICorner_92 = Instance.new("UICorner"),
+	OnOrOff_15 = Instance.new("TextLabel"),
+	UICorner_93 = Instance.new("UICorner"),
+	UIGradient_71 = Instance.new("UIGradient"),
+	ForceAccept = Instance.new("Frame"),
+	Text_12 = Instance.new("TextLabel"),
+	WhiteBar_16 = Instance.new("Frame"),
+	UIGradient_72 = Instance.new("UIGradient"),
+	Frame8_4 = Instance.new("Frame"),
+	UICorner_94 = Instance.new("UICorner"),
+	UIGradient_73 = Instance.new("UIGradient"),
+	ColorFrame_16 = Instance.new("Frame"),
+	UICorner_95 = Instance.new("UICorner"),
+	UIGradient_74 = Instance.new("UIGradient"),
+	Button_16 = Instance.new("TextButton"),
+	UICorner_96 = Instance.new("UICorner"),
+	OnOrOff_16 = Instance.new("TextLabel"),
+	UICorner_97 = Instance.new("UICorner"),
+	UIGradient_75 = Instance.new("UIGradient"),
+}
+
+--Properties:
+
+MainGui.MainGui.Name = "MainGui"
+MainGui.MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainGui.MainGui.ResetOnSpawn = false
+
+MainGui.MainFrame.Name = "MainFrame"
+MainGui.MainFrame.Parent = MainGui.MainGui
+MainGui.MainFrame.Active = true
+MainGui.MainFrame.AnchorPoint = Vector2.new(0, 0.5)
+MainGui.MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.MainFrame.BackgroundTransparency = 1.000
+MainGui.MainFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.MainFrame.BorderSizePixel = 0
+MainGui.MainFrame.Position = UDim2.new(0, 0, 0.5, 0)
+MainGui.MainFrame.Selectable = true
+MainGui.MainFrame.Size = UDim2.new(1, 0, 1, 0)
+
+MainGui.MenuFrame.Name = "MenuFrame"
+MainGui.MenuFrame.Parent = MainGui.MainFrame
+MainGui.MenuFrame.Active = true
+MainGui.MenuFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.MenuFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainGui.MenuFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.MenuFrame.BorderSizePixel = 0
+MainGui.MenuFrame.Position = UDim2.new(0.513751745, 0, 0.512036264, 0)
+MainGui.MenuFrame.Size = UDim2.new(0.415445417, 0, 0.38949278, 0)
+
+MainGui.UICorner.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner.Parent = MainGui.MenuFrame
+
+MainGui.Background.Name = "Background"
+MainGui.Background.Parent = MainGui.MenuFrame
+MainGui.Background.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainGui.Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Background.BorderSizePixel = 0
+MainGui.Background.Position = UDim2.new(0.34777081, 0, 0.466196597, 0)
+MainGui.Background.Size = UDim2.new(5.7929821, 0, 1.56295896, 0)
+MainGui.Background.ZIndex = 3
+
+MainGui.UICorner_2.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_2.Parent = MainGui.Background
+
+MainGui.PlayerInfo.Name = "PlayerInfo"
+MainGui.PlayerInfo.Parent = MainGui.Background
+MainGui.PlayerInfo.AnchorPoint = Vector2.new(0.5, 0)
+MainGui.PlayerInfo.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainGui.PlayerInfo.BackgroundTransparency = 1.000
+MainGui.PlayerInfo.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.PlayerInfo.BorderSizePixel = 0
+MainGui.PlayerInfo.Position = UDim2.new(0.264403462, 0, 2.00843839e-08, 0)
+MainGui.PlayerInfo.Size = UDim2.new(0.286281079, 0, 0.137535885, 0)
+MainGui.PlayerInfo.ZIndex = 3
+
+MainGui.UICorner_3.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_3.Parent = MainGui.PlayerInfo
+
+MainGui.Username.Name = "Username"
+MainGui.Username.Parent = MainGui.PlayerInfo
+MainGui.Username.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Username.BackgroundTransparency = 1.000
+MainGui.Username.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Username.Position = UDim2.new(0.544582665, 0, 0.525464594, 0)
+MainGui.Username.Size = UDim2.new(0.582374394, 0, 0.289261997, 0)
+MainGui.Username.ZIndex = 3
+MainGui.Username.Font = Enum.Font.GothamBold
+MainGui.Username.Text = "@User"
+MainGui.Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Username.TextScaled = true
+MainGui.Username.TextSize = 14.000
+MainGui.Username.TextWrapped = true
+MainGui.Username.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.DisplayName.Name = "DisplayName"
+MainGui.DisplayName.Parent = MainGui.PlayerInfo
+MainGui.DisplayName.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.DisplayName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.DisplayName.BackgroundTransparency = 1.000
+MainGui.DisplayName.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.DisplayName.Position = UDim2.new(0.544582665, 0, 0.829527378, 0)
+MainGui.DisplayName.Size = UDim2.new(0.582374394, 0, 0.248652294, 0)
+MainGui.DisplayName.ZIndex = 3
+MainGui.DisplayName.Font = Enum.Font.GothamMedium
+MainGui.DisplayName.Text = "DisplayName"
+MainGui.DisplayName.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.DisplayName.TextScaled = true
+MainGui.DisplayName.TextSize = 14.000
+MainGui.DisplayName.TextWrapped = true
+MainGui.DisplayName.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.Premium.Name = "Premium"
+MainGui.Premium.Parent = MainGui.PlayerInfo
+MainGui.Premium.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Premium.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+MainGui.Premium.BackgroundTransparency = 1.000
+MainGui.Premium.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Premium.Position = UDim2.new(1.3289175, 0, 0.487682641, 0)
+MainGui.Premium.Size = UDim2.new(0.240236238, 0, 0.886561334, 0)
+MainGui.Premium.Visible = false
+MainGui.Premium.ZIndex = 4
+
+MainGui.UIAspectRatioConstraint.Parent = MainGui.Premium
+
+MainGui.UICorner_4.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_4.Parent = MainGui.Premium
+
+MainGui.Premium_2.Name = "Premium"
+MainGui.Premium_2.Parent = MainGui.Premium
+MainGui.Premium_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Premium_2.BackgroundColor3 = Color3.fromRGB(99, 124, 171)
+MainGui.Premium_2.BackgroundTransparency = 1.000
+MainGui.Premium_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Premium_2.Position = UDim2.new(0.512920141, 0, 0.499999225, 0)
+MainGui.Premium_2.Size = UDim2.new(0.863136053, 0, 1.00701177, 0)
+MainGui.Premium_2.ZIndex = 4
+MainGui.Premium_2.Image = "rbxassetid://6071020687"
+
+MainGui.UIAspectRatioConstraint_2.Parent = MainGui.Premium_2
+
+MainGui.UICorner_5.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_5.Parent = MainGui.Premium_2
+
+MainGui.NIL.Name = "NIL"
+MainGui.NIL.Parent = MainGui.PlayerInfo
+MainGui.NIL.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.NIL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.NIL.BackgroundTransparency = 1.000
+MainGui.NIL.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.NIL.Position = UDim2.new(-0.0333014093, 0, 0.696054995, 0)
+MainGui.NIL.Size = UDim2.new(0.45530045, 0, 0.630443454, 0)
+MainGui.NIL.ZIndex = 3
+MainGui.NIL.Font = Enum.Font.GothamBold
+MainGui.NIL.Text = "NILOnTop"
+MainGui.NIL.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.NIL.TextScaled = true
+MainGui.NIL.TextSize = 14.000
+MainGui.NIL.TextWrapped = true
+MainGui.NIL.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.Bar.Name = "Bar"
+MainGui.Bar.Parent = MainGui.Background
+MainGui.Bar.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar.BorderSizePixel = 0
+MainGui.Bar.Position = UDim2.new(0.501732349, 0, 0.159147456, 0)
+MainGui.Bar.Size = UDim2.new(0.908383548, 0, 0.00199897285, 0)
+MainGui.Bar.ZIndex = 100
+
+MainGui.UICorner_6.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_6.Parent = MainGui.Bar
+
+MainGui.UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient.Parent = MainGui.Bar
+
+MainGui.Bar2.Name = "Bar2"
+MainGui.Bar2.Parent = MainGui.Background
+MainGui.Bar2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar2.BorderSizePixel = 0
+MainGui.Bar2.Position = UDim2.new(0.5, 0, 0.969758749, 0)
+MainGui.Bar2.Size = UDim2.new(0.908383548, 0, 0.00199897285, 0)
+MainGui.Bar2.ZIndex = 100
+
+MainGui.UICorner_7.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_7.Parent = MainGui.Bar2
+
+MainGui.UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_2.Parent = MainGui.Bar2
+
+MainGui.UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke.Color = Color3.fromRGB(42, 42, 42)
+MainGui.UIStroke.Transparency = 0.6000000238418579
+MainGui.UIStroke.Thickness = 2
+MainGui.UIStroke.Parent = MainGui.Background
+
+MainGui.Buttons.Name = "Buttons"
+MainGui.Buttons.Parent = MainGui.Background
+MainGui.Buttons.Active = true
+MainGui.Buttons.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Buttons.BackgroundTransparency = 1.000
+MainGui.Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Buttons.BorderSizePixel = 0
+MainGui.Buttons.Position = UDim2.new(0.0190556031, 0, 0.189540014, 0)
+MainGui.Buttons.Size = UDim2.new(0.249455154, 0, 0.776587605, 0)
+MainGui.Buttons.ScrollBarThickness = 4
+
+MainGui.UICorner_8.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_8.Parent = MainGui.Buttons
+
+MainGui.UIListLayout.Parent = MainGui.Buttons
+MainGui.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout.Padding = UDim.new(0.00499999989, 0)
+
+MainGui.Eggs.Name = "Eggs"
+MainGui.Eggs.Parent = MainGui.Buttons
+MainGui.Eggs.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Eggs.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Eggs.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Eggs.BorderSizePixel = 0
+MainGui.Eggs.Position = UDim2.new(0.49999994, 0, 1.44857442, 0)
+MainGui.Eggs.Size = UDim2.new(0.908383608, 0, 0.0429115407, 0)
+MainGui.Eggs.ZIndex = 3
+
+MainGui.UICorner_9.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_9.Parent = MainGui.Eggs
+
+MainGui.Eggstex.Name = "Eggstex"
+MainGui.Eggstex.Parent = MainGui.Eggs
+MainGui.Eggstex.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Eggstex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Eggstex.BackgroundTransparency = 1.000
+MainGui.Eggstex.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Eggstex.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.Eggstex.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.Eggstex.RichText = true
+MainGui.Eggstex.ZIndex = 4
+MainGui.Eggstex.Font = Enum.Font.GothamMedium
+MainGui.Eggstex.Text = "Eggs"
+MainGui.Eggstex.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Eggstex.TextScaled = true
+MainGui.Eggstex.TextSize = 14.000
+MainGui.Eggstex.TextWrapped = true
+MainGui.Eggstex.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.EggButton.Name = "EggButton"
+MainGui.EggButton.Parent = MainGui.Eggs
+MainGui.EggButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.EggButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.EggButton.BackgroundTransparency = 1.000
+MainGui.EggButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.EggButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.EggButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.EggButton.ZIndex = 4
+MainGui.EggButton.Font = Enum.Font.SourceSans
+MainGui.EggButton.Text = " "
+MainGui.EggButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.EggButton.TextSize = 14.000
+
+MainGui.Icon.Name = "Icon"
+MainGui.Icon.Parent = MainGui.Eggs
+MainGui.Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Icon.BackgroundTransparency = 1.000
+MainGui.Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Icon.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.Icon.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.Icon.ZIndex = 4
+MainGui.Icon.Image = "rbxassetid://11989842095"
+
+MainGui.UIAspectRatioConstraint_3.Parent = MainGui.Icon
+
+MainGui.Bar_2.Name = "Bar"
+MainGui.Bar_2.Parent = MainGui.Icon
+MainGui.Bar_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_2.BorderSizePixel = 0
+MainGui.Bar_2.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_2.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_2.ZIndex = 3
+
+MainGui.UICorner_10.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_10.Parent = MainGui.Bar_2
+
+MainGui.UIGradient_3.Rotation = 90
+MainGui.UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_3.Parent = MainGui.Bar_2
+
+MainGui.AutoFarm1.Name = "AutoFarm1"
+MainGui.AutoFarm1.Parent = MainGui.Buttons
+MainGui.AutoFarm1.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AutoFarm1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.AutoFarm1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AutoFarm1.BorderSizePixel = 0
+MainGui.AutoFarm1.Position = UDim2.new(0.49999994, 0, 1.49569118, 0)
+MainGui.AutoFarm1.Size = UDim2.new(0.908383608, 0, 0.0429115407, 0)
+MainGui.AutoFarm1.ZIndex = 3
+
+MainGui.UICorner_11.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_11.Parent = MainGui.AutoFarm1
+
+MainGui.AutoFarmText.Name = "AutoFarmText"
+MainGui.AutoFarmText.Parent = MainGui.AutoFarm1
+MainGui.AutoFarmText.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AutoFarmText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AutoFarmText.BackgroundTransparency = 1.000
+MainGui.AutoFarmText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AutoFarmText.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.AutoFarmText.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.AutoFarmText.ZIndex = 4
+MainGui.AutoFarmText.Font = Enum.Font.GothamMedium
+MainGui.AutoFarmText.Text = "Main"
+MainGui.AutoFarmText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AutoFarmText.TextScaled = true
+MainGui.AutoFarmText.TextSize = 14.000
+MainGui.AutoFarmText.TextWrapped = true
+MainGui.AutoFarmText.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.AutoFarmButton.Name = "AutoFarmButton"
+MainGui.AutoFarmButton.Parent = MainGui.AutoFarm1
+MainGui.AutoFarmButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AutoFarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AutoFarmButton.BackgroundTransparency = 1.000
+MainGui.AutoFarmButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AutoFarmButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.AutoFarmButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.AutoFarmButton.ZIndex = 4
+MainGui.AutoFarmButton.Font = Enum.Font.SourceSans
+MainGui.AutoFarmButton.Text = " "
+MainGui.AutoFarmButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.AutoFarmButton.TextSize = 14.000
+
+MainGui.Icon_2.Name = "Icon"
+MainGui.Icon_2.Parent = MainGui.AutoFarm1
+MainGui.Icon_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Icon_2.BackgroundTransparency = 1.000
+MainGui.Icon_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Icon_2.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.Icon_2.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.Icon_2.ZIndex = 4
+MainGui.Icon_2.Image = "rbxassetid://11385220704"
+
+MainGui.UIAspectRatioConstraint_4.Parent = MainGui.Icon_2
+
+MainGui.Bar_3.Name = "Bar"
+MainGui.Bar_3.Parent = MainGui.Icon_2
+MainGui.Bar_3.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_3.BorderSizePixel = 0
+MainGui.Bar_3.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_3.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_3.ZIndex = 3
+
+MainGui.UICorner_12.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_12.Parent = MainGui.Bar_3
+
+MainGui.UIGradient_4.Rotation = 90
+MainGui.UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_4.Parent = MainGui.Bar_3
+
+MainGui.Event.Name = "Event"
+MainGui.Event.Parent = MainGui.Buttons
+MainGui.Event.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Event.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Event.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Event.BorderSizePixel = 0
+MainGui.Event.Position = UDim2.new(0.49999994, 0, 1.5428077, 0)
+MainGui.Event.Size = UDim2.new(0.908383608, 0, 0.0429115668, 0)
+MainGui.Event.ZIndex = 3
+
+MainGui.UICorner_13.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_13.Parent = MainGui.Event
+
+MainGui.EventButtonText.Name = "EventButtonText"
+MainGui.EventButtonText.Parent = MainGui.Event
+MainGui.EventButtonText.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.EventButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.EventButtonText.BackgroundTransparency = 1.000
+MainGui.EventButtonText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.EventButtonText.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.EventButtonText.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.EventButtonText.ZIndex = 4
+MainGui.EventButtonText.Font = Enum.Font.GothamMedium
+MainGui.EventButtonText.Text = "Event"
+MainGui.EventButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.EventButtonText.TextScaled = true
+MainGui.EventButtonText.TextSize = 14.000
+MainGui.EventButtonText.TextWrapped = true
+MainGui.EventButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.EventButton.Name = "EventButton"
+MainGui.EventButton.Parent = MainGui.Event
+MainGui.EventButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.EventButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.EventButton.BackgroundTransparency = 1.000
+MainGui.EventButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.EventButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.EventButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.EventButton.ZIndex = 4
+MainGui.EventButton.Font = Enum.Font.SourceSans
+MainGui.EventButton.Text = " "
+MainGui.EventButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.EventButton.TextSize = 14.000
+
+MainGui.EventIcon.Name = "EventIcon"
+MainGui.EventIcon.Parent = MainGui.Event
+MainGui.EventIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.EventIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.EventIcon.BackgroundTransparency = 1.000
+MainGui.EventIcon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.EventIcon.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.EventIcon.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.EventIcon.ZIndex = 4
+MainGui.EventIcon.Image = "rbxassetid://12602971054"
+
+MainGui.UIAspectRatioConstraint_5.Parent = MainGui.EventIcon
+
+MainGui.Bar_4.Name = "Bar"
+MainGui.Bar_4.Parent = MainGui.EventIcon
+MainGui.Bar_4.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_4.BorderSizePixel = 0
+MainGui.Bar_4.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_4.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_4.ZIndex = 3
+
+MainGui.UICorner_14.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_14.Parent = MainGui.Bar_4
+
+MainGui.UIGradient_5.Rotation = 90
+MainGui.UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_5.Parent = MainGui.Bar_4
+
+MainGui.HugeHunter.Name = "HugeHunter"
+MainGui.HugeHunter.Parent = MainGui.Buttons
+MainGui.HugeHunter.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.HugeHunter.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.HugeHunter.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.HugeHunter.BorderSizePixel = 0
+MainGui.HugeHunter.Position = UDim2.new(0.49999994, 0, 1.58992434, 0)
+MainGui.HugeHunter.Size = UDim2.new(0.908383608, 0, 0.0429115556, 0)
+MainGui.HugeHunter.ZIndex = 3
+
+MainGui.UICorner_15.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_15.Parent = MainGui.HugeHunter
+
+MainGui.HugeHunterText.Name = "HugeHunterText"
+MainGui.HugeHunterText.Parent = MainGui.HugeHunter
+MainGui.HugeHunterText.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.HugeHunterText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.HugeHunterText.BackgroundTransparency = 1.000
+MainGui.HugeHunterText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.HugeHunterText.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.HugeHunterText.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.HugeHunterText.ZIndex = 4
+MainGui.HugeHunterText.Font = Enum.Font.GothamMedium
+MainGui.HugeHunterText.Text = "Huge Hunter"
+MainGui.HugeHunterText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.HugeHunterText.TextScaled = true
+MainGui.HugeHunterText.TextSize = 14.000
+MainGui.HugeHunterText.TextWrapped = true
+MainGui.HugeHunterText.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.HugeHunterButton.Name = "HugeHunterButton"
+MainGui.HugeHunterButton.Parent = MainGui.HugeHunter
+MainGui.HugeHunterButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.HugeHunterButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.HugeHunterButton.BackgroundTransparency = 1.000
+MainGui.HugeHunterButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.HugeHunterButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.HugeHunterButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.HugeHunterButton.ZIndex = 4
+MainGui.HugeHunterButton.Font = Enum.Font.SourceSans
+MainGui.HugeHunterButton.Text = " "
+MainGui.HugeHunterButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.HugeHunterButton.TextSize = 14.000
+
+MainGui.Icon_3.Name = "Icon"
+MainGui.Icon_3.Parent = MainGui.HugeHunter
+MainGui.Icon_3.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Icon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Icon_3.BackgroundTransparency = 1.000
+MainGui.Icon_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Icon_3.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.Icon_3.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.Icon_3.ZIndex = 4
+MainGui.Icon_3.Image = "rbxassetid://15522743885"
+
+MainGui.UIAspectRatioConstraint_6.Parent = MainGui.Icon_3
+
+MainGui.Bar_5.Name = "Bar"
+MainGui.Bar_5.Parent = MainGui.Icon_3
+MainGui.Bar_5.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_5.BorderSizePixel = 0
+MainGui.Bar_5.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_5.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_5.ZIndex = 3
+
+MainGui.UICorner_16.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_16.Parent = MainGui.Bar_5
+
+MainGui.UIGradient_6.Rotation = 90
+MainGui.UIGradient_6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_6.Parent = MainGui.Bar_5
+
+MainGui.Misc.Name = "Misc"
+MainGui.Misc.Parent = MainGui.Buttons
+MainGui.Misc.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Misc.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Misc.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Misc.BorderSizePixel = 0
+MainGui.Misc.Position = UDim2.new(0.49999994, 0, 1.63704097, 0)
+MainGui.Misc.Size = UDim2.new(0.908383608, 0, 0.0429115556, 0)
+MainGui.Misc.ZIndex = 3
+
+MainGui.UICorner_17.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_17.Parent = MainGui.Misc
+
+MainGui.Misctext.Name = "Misctext"
+MainGui.Misctext.Parent = MainGui.Misc
+MainGui.Misctext.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Misctext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Misctext.BackgroundTransparency = 1.000
+MainGui.Misctext.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Misctext.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.Misctext.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.Misctext.ZIndex = 4
+MainGui.Misctext.Font = Enum.Font.GothamMedium
+MainGui.Misctext.Text = "Misc"
+MainGui.Misctext.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Misctext.TextScaled = true
+MainGui.Misctext.TextSize = 14.000
+MainGui.Misctext.TextWrapped = true
+MainGui.Misctext.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.MiscButton.Name = "MiscButton"
+MainGui.MiscButton.Parent = MainGui.Misc
+MainGui.MiscButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.MiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.MiscButton.BackgroundTransparency = 1.000
+MainGui.MiscButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.MiscButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.MiscButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.MiscButton.ZIndex = 4
+MainGui.MiscButton.Font = Enum.Font.SourceSans
+MainGui.MiscButton.Text = " "
+MainGui.MiscButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.MiscButton.TextSize = 14.000
+
+MainGui.Icon_4.Name = "Icon"
+MainGui.Icon_4.Parent = MainGui.Misc
+MainGui.Icon_4.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Icon_4.BackgroundTransparency = 1.000
+MainGui.Icon_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Icon_4.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.Icon_4.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.Icon_4.ZIndex = 4
+MainGui.Icon_4.Image = "rbxassetid://4458813939"
+
+MainGui.UIAspectRatioConstraint_7.Parent = MainGui.Icon_4
+
+MainGui.Bar_6.Name = "Bar"
+MainGui.Bar_6.Parent = MainGui.Icon_4
+MainGui.Bar_6.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_6.BorderSizePixel = 0
+MainGui.Bar_6.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_6.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_6.ZIndex = 3
+
+MainGui.UICorner_18.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_18.Parent = MainGui.Bar_6
+
+MainGui.UIGradient_7.Rotation = 90
+MainGui.UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_7.Parent = MainGui.Bar_6
+
+MainGui.TradeScam.Name = "TradeScam"
+MainGui.TradeScam.Parent = MainGui.Buttons
+MainGui.TradeScam.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.TradeScam.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.TradeScam.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.TradeScam.BorderSizePixel = 0
+MainGui.TradeScam.Position = UDim2.new(0.49999994, 0, 1.68415761, 0)
+MainGui.TradeScam.Size = UDim2.new(0.908383608, 0, 0.0429115444, 0)
+MainGui.TradeScam.ZIndex = 3
+
+MainGui.UICorner_19.CornerRadius = UDim.new(0.25, 0)
+MainGui.UICorner_19.Parent = MainGui.TradeScam
+
+MainGui.TradeScamText.Name = "TradeScamText"
+MainGui.TradeScamText.Parent = MainGui.TradeScam
+MainGui.TradeScamText.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.TradeScamText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.TradeScamText.BackgroundTransparency = 1.000
+MainGui.TradeScamText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.TradeScamText.Position = UDim2.new(0.569006979, 0, 0.500000119, 0)
+MainGui.TradeScamText.Size = UDim2.new(0.644348383, 0, 0.400426567, 0)
+MainGui.TradeScamText.ZIndex = 4
+MainGui.TradeScamText.Font = Enum.Font.GothamMedium
+MainGui.TradeScamText.Text = "Trade Scam"
+MainGui.TradeScamText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.TradeScamText.TextScaled = true
+MainGui.TradeScamText.TextSize = 14.000
+MainGui.TradeScamText.TextWrapped = true
+MainGui.TradeScamText.TextXAlignment = Enum.TextXAlignment.Left
+
+MainGui.TradeScamButton.Name = "TradeScamButton"
+MainGui.TradeScamButton.Parent = MainGui.TradeScam
+MainGui.TradeScamButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.TradeScamButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.TradeScamButton.BackgroundTransparency = 1.000
+MainGui.TradeScamButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.TradeScamButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainGui.TradeScamButton.Size = UDim2.new(1, 0, 1, 0)
+MainGui.TradeScamButton.ZIndex = 4
+MainGui.TradeScamButton.Font = Enum.Font.SourceSans
+MainGui.TradeScamButton.Text = " "
+MainGui.TradeScamButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.TradeScamButton.TextSize = 14.000
+
+MainGui.Icon_5.Name = "Icon"
+MainGui.Icon_5.Parent = MainGui.TradeScam
+MainGui.Icon_5.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Icon_5.BackgroundTransparency = 1.000
+MainGui.Icon_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Icon_5.Position = UDim2.new(0.100000001, 0, 0.500000119, 0)
+MainGui.Icon_5.Size = UDim2.new(0.170014486, 0, 1, 0)
+MainGui.Icon_5.ZIndex = 4
+MainGui.Icon_5.Image = "rbxassetid://132570476091718"
+
+MainGui.UIAspectRatioConstraint_8.Parent = MainGui.Icon_5
+
+MainGui.Bar_7.Name = "Bar"
+MainGui.Bar_7.Parent = MainGui.Icon_5
+MainGui.Bar_7.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.Bar_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Bar_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Bar_7.BorderSizePixel = 0
+MainGui.Bar_7.Position = UDim2.new(1.10376871, 0, 0.500000179, 0)
+MainGui.Bar_7.Size = UDim2.new(0.0299999993, 0, 1, 0)
+MainGui.Bar_7.ZIndex = 3
+
+MainGui.UICorner_20.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_20.Parent = MainGui.Bar_7
+
+MainGui.UIGradient_8.Rotation = 90
+MainGui.UIGradient_8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.81, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_8.Parent = MainGui.Bar_7
+
+MainGui.Minimize.Name = "Minimize"
+MainGui.Minimize.Parent = MainGui.Background
+MainGui.Minimize.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+MainGui.Minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Minimize.BorderSizePixel = 0
+MainGui.Minimize.Position = UDim2.new(0.79340601, 0, 0.0339508019, 0)
+MainGui.Minimize.Size = UDim2.new(0.0727577582, 0, 0.100306749, 0)
+MainGui.Minimize.Font = Enum.Font.SourceSans
+MainGui.Minimize.Text = "—"
+MainGui.Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Minimize.TextScaled = true
+MainGui.Minimize.TextSize = 14.000
+MainGui.Minimize.TextWrapped = true
+MainGui.Minimize.TextYAlignment = Enum.TextYAlignment.Top
+
+MainGui.UICorner_21.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_21.Parent = MainGui.Minimize
+
+MainGui.UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_2.Color = Color3.fromRGB(42, 42, 42)
+MainGui.UIStroke_2.Transparency = 0.6000000238418579
+MainGui.UIStroke_2.Thickness = 2
+MainGui.UIStroke_2.Parent = MainGui.Minimize
+
+MainGui.Close.Name = "Close"
+MainGui.Close.Parent = MainGui.Background
+MainGui.Close.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+MainGui.Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Close.BorderSizePixel = 0
+MainGui.Close.Position = UDim2.new(0.881754696, 0, 0.0339508019, 0)
+MainGui.Close.Size = UDim2.new(0.0727577582, 0, 0.100306749, 0)
+MainGui.Close.Font = Enum.Font.SourceSans
+MainGui.Close.Text = "X"
+MainGui.Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Close.TextScaled = true
+MainGui.Close.TextSize = 14.000
+MainGui.Close.TextWrapped = true
+MainGui.Close.TextYAlignment = Enum.TextYAlignment.Top
+
+MainGui.UICorner_22.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_22.Parent = MainGui.Close
+
+MainGui.UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_3.Color = Color3.fromRGB(42, 42, 42)
+MainGui.UIStroke_3.Transparency = 0.6000000238418579
+MainGui.UIStroke_3.Thickness = 2
+MainGui.UIStroke_3.Parent = MainGui.Close
+
+MainGui.ImageLabel.Parent = MainGui.MenuFrame
+MainGui.ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.ImageLabel.BackgroundTransparency = 1.000
+MainGui.ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.ImageLabel.Position = UDim2.new(0.352386653, 0, 0.47496599, 0)
+MainGui.ImageLabel.Size = UDim2.new(6.78570938, 0, 1.91263008, 0)
+MainGui.ImageLabel.Image = "rbxassetid://11634616528"
+
+MainGui.UICorner_23.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_23.Parent = MainGui.ImageLabel
+
+MainGui.UIAspectRatioConstraint_9.Parent = MainGui.MenuFrame
+MainGui.UIAspectRatioConstraint_9.AspectRatio = 0.410
+
+MainGui.BGSPWN.Name = "BGSPWN"
+MainGui.BGSPWN.Parent = MainGui.MenuFrame
+MainGui.BGSPWN.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.BGSPWN.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.BGSPWN.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.BGSPWN.BorderSizePixel = 0
+MainGui.BGSPWN.Position = UDim2.new(1.05303907, 0, 0.589165211, 0)
+MainGui.BGSPWN.Size = UDim2.new(3.87178445, 0, 1.13598394, 0)
+MainGui.BGSPWN.ZIndex = 3
+
+MainGui.UICorner_24.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_24.Parent = MainGui.BGSPWN
+
+MainGui.UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_4.Color = Color3.fromRGB(42, 42, 42)
+MainGui.UIStroke_4.Transparency = 0.6000000238418579
+MainGui.UIStroke_4.Thickness = 2
+MainGui.UIStroke_4.Parent = MainGui.BGSPWN
+
+MainGui.AutoFarm.Name = "AutoFarm"
+MainGui.AutoFarm.Parent = MainGui.BGSPWN
+MainGui.AutoFarm.Active = true
+MainGui.AutoFarm.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.AutoFarm.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.AutoFarm.BorderSizePixel = 0
+MainGui.AutoFarm.Position = UDim2.new(0.0285110045, 0, 0.0472825766, 0)
+MainGui.AutoFarm.Size = UDim2.new(0.940865755, 0, 0.900391877, 0)
+MainGui.AutoFarm.Visible = false
+MainGui.AutoFarm.ScrollBarThickness = 4
+
+MainGui.UICorner_25.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_25.Parent = MainGui.AutoFarm
+
+MainGui.UIListLayout_2.Parent = MainGui.AutoFarm
+MainGui.UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_2.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AMain.Name = "AMain"
+MainGui.AMain.Parent = MainGui.AutoFarm
+MainGui.AMain.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AMain.BackgroundTransparency = 1.000
+MainGui.AMain.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AMain.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AMain.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AMain.ZIndex = 3
+MainGui.AMain.Font = Enum.Font.Gotham
+MainGui.AMain.Text = "— Main —"
+MainGui.AMain.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AMain.TextScaled = true
+MainGui.AMain.TextSize = 14.000
+MainGui.AMain.TextWrapped = true
+
+MainGui.AutoClaim.Name = "AutoClaim"
+MainGui.AutoClaim.Parent = MainGui.AutoFarm
+MainGui.AutoClaim.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.AutoClaim.BackgroundTransparency = 1.000
+MainGui.AutoClaim.BorderSizePixel = 0
+MainGui.AutoClaim.Position = UDim2.new(0.00174203853, 0, 0.109711245, 0)
+MainGui.AutoClaim.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text.Name = "Text"
+MainGui.Text.Parent = MainGui.AutoClaim
+MainGui.Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text.BackgroundTransparency = 1.000
+MainGui.Text.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text.ZIndex = 2
+MainGui.Text.Font = Enum.Font.Gotham
+MainGui.Text.Text = "Auto Claim Free Gifts"
+MainGui.Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text.TextScaled = true
+MainGui.Text.TextSize = 14.000
+MainGui.Text.TextWrapped = true
+
+MainGui.WhiteBar.Name = "WhiteBar"
+MainGui.WhiteBar.Parent = MainGui.AutoClaim
+MainGui.WhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar.BorderSizePixel = 0
+MainGui.WhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_9.Rotation = 90
+MainGui.UIGradient_9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_9.Parent = MainGui.WhiteBar
+
+MainGui.Frame23.Name = "Frame23"
+MainGui.Frame23.Parent = MainGui.AutoClaim
+MainGui.Frame23.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame23.BorderSizePixel = 0
+MainGui.Frame23.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame23.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_26.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_26.Parent = MainGui.Frame23
+
+MainGui.UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_10.Rotation = -90
+MainGui.UIGradient_10.Parent = MainGui.Frame23
+
+MainGui.ColorFrame.Name = "ColorFrame"
+MainGui.ColorFrame.Parent = MainGui.Frame23
+MainGui.ColorFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame.BorderSizePixel = 0
+MainGui.ColorFrame.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_27.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_27.Parent = MainGui.ColorFrame
+
+MainGui.UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_11.Rotation = -90
+MainGui.UIGradient_11.Parent = MainGui.ColorFrame
+
+MainGui.Button.Name = "Button"
+MainGui.Button.Parent = MainGui.ColorFrame
+MainGui.Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button.Position = UDim2.new(0.0299995895, 0, 0.0280005559, 0)
+MainGui.Button.Size = UDim2.new(0.416813254, 0, 1.07000303, 0)
+MainGui.Button.ZIndex = 2
+MainGui.Button.Font = Enum.Font.SourceSans
+MainGui.Button.Text = " "
+MainGui.Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button.TextSize = 14.000
+
+MainGui.UICorner_28.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_28.Parent = MainGui.Button
+
+MainGui.OnOrOff.Name = "OnOrOff"
+MainGui.OnOrOff.Parent = MainGui.AutoClaim
+MainGui.OnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff.BackgroundTransparency = 1.000
+MainGui.OnOrOff.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff.ZIndex = 2
+MainGui.OnOrOff.Font = Enum.Font.Gotham
+MainGui.OnOrOff.Text = "Off"
+MainGui.OnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff.TextScaled = true
+MainGui.OnOrOff.TextSize = 14.000
+MainGui.OnOrOff.TextWrapped = true
+
+MainGui.UICorner_29.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_29.Parent = MainGui.AutoClaim
+
+MainGui.UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_12.Rotation = -90
+MainGui.UIGradient_12.Parent = MainGui.AutoClaim
+
+MainGui.AutoClimb.Name = "AutoClimb"
+MainGui.AutoClimb.Parent = MainGui.AutoFarm
+MainGui.AutoClimb.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.AutoClimb.BackgroundTransparency = 1.000
+MainGui.AutoClimb.BorderSizePixel = 0
+MainGui.AutoClimb.Position = UDim2.new(0.00174203853, 0, 0.20766522, 0)
+MainGui.AutoClimb.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_2.Name = "Text"
+MainGui.Text_2.Parent = MainGui.AutoClimb
+MainGui.Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_2.BackgroundTransparency = 1.000
+MainGui.Text_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_2.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_2.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_2.ZIndex = 2
+MainGui.Text_2.Font = Enum.Font.Gotham
+MainGui.Text_2.Text = "Auto Climb Huge Angel Dog Stairs"
+MainGui.Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_2.TextScaled = true
+MainGui.Text_2.TextSize = 14.000
+MainGui.Text_2.TextWrapped = true
+
+MainGui.WhiteBar_2.Name = "WhiteBar"
+MainGui.WhiteBar_2.Parent = MainGui.AutoClimb
+MainGui.WhiteBar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_2.BorderSizePixel = 0
+MainGui.WhiteBar_2.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_2.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_13.Rotation = 90
+MainGui.UIGradient_13.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_13.Parent = MainGui.WhiteBar_2
+
+MainGui.Frame4.Name = "Frame4"
+MainGui.Frame4.Parent = MainGui.AutoClimb
+MainGui.Frame4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame4.BorderSizePixel = 0
+MainGui.Frame4.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame4.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_30.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_30.Parent = MainGui.Frame4
+
+MainGui.UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_14.Rotation = -90
+MainGui.UIGradient_14.Parent = MainGui.Frame4
+
+MainGui.ColorFrame_2.Name = "ColorFrame"
+MainGui.ColorFrame_2.Parent = MainGui.Frame4
+MainGui.ColorFrame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_2.BorderSizePixel = 0
+MainGui.ColorFrame_2.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_2.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_31.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_31.Parent = MainGui.ColorFrame_2
+
+MainGui.UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_15.Rotation = -90
+MainGui.UIGradient_15.Parent = MainGui.ColorFrame_2
+
+MainGui.Button_2.Name = "Button"
+MainGui.Button_2.Parent = MainGui.ColorFrame_2
+MainGui.Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_2.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_2.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_2.ZIndex = 2
+MainGui.Button_2.Font = Enum.Font.SourceSans
+MainGui.Button_2.Text = " "
+MainGui.Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_2.TextSize = 14.000
+
+MainGui.UICorner_32.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_32.Parent = MainGui.Button_2
+
+MainGui.OnOrOff_2.Name = "OnOrOff"
+MainGui.OnOrOff_2.Parent = MainGui.AutoClimb
+MainGui.OnOrOff_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_2.BackgroundTransparency = 1.000
+MainGui.OnOrOff_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_2.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_2.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_2.ZIndex = 2
+MainGui.OnOrOff_2.Font = Enum.Font.Gotham
+MainGui.OnOrOff_2.Text = "Off"
+MainGui.OnOrOff_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_2.TextScaled = true
+MainGui.OnOrOff_2.TextSize = 14.000
+MainGui.OnOrOff_2.TextWrapped = true
+
+MainGui.UICorner_33.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_33.Parent = MainGui.AutoClimb
+
+MainGui.UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_16.Rotation = -90
+MainGui.UIGradient_16.Parent = MainGui.AutoClimb
+
+MainGui.AutoCollectOrbs.Name = "AutoCollectOrbs"
+MainGui.AutoCollectOrbs.Parent = MainGui.AutoFarm
+MainGui.AutoCollectOrbs.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.AutoCollectOrbs.BackgroundTransparency = 1.000
+MainGui.AutoCollectOrbs.BorderSizePixel = 0
+MainGui.AutoCollectOrbs.Position = UDim2.new(0.00174203853, 0, 0.305619091, 0)
+MainGui.AutoCollectOrbs.Size = UDim2.new(0.993918538, 1, 0.0867645219, 0)
+
+MainGui.Text_3.Name = "Text"
+MainGui.Text_3.Parent = MainGui.AutoCollectOrbs
+MainGui.Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_3.BackgroundTransparency = 1.000
+MainGui.Text_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_3.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_3.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_3.ZIndex = 2
+MainGui.Text_3.Font = Enum.Font.Gotham
+MainGui.Text_3.Text = "Auto Collect Orbs"
+MainGui.Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_3.TextScaled = true
+MainGui.Text_3.TextSize = 14.000
+MainGui.Text_3.TextWrapped = true
+
+MainGui.WhiteBar_3.Name = "WhiteBar"
+MainGui.WhiteBar_3.Parent = MainGui.AutoCollectOrbs
+MainGui.WhiteBar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_3.BorderSizePixel = 0
+MainGui.WhiteBar_3.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_3.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_17.Rotation = 90
+MainGui.UIGradient_17.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_17.Parent = MainGui.WhiteBar_3
+
+MainGui.Frame5.Name = "Frame5"
+MainGui.Frame5.Parent = MainGui.AutoCollectOrbs
+MainGui.Frame5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame5.BorderSizePixel = 0
+MainGui.Frame5.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame5.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_34.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_34.Parent = MainGui.Frame5
+
+MainGui.UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_18.Rotation = -90
+MainGui.UIGradient_18.Parent = MainGui.Frame5
+
+MainGui.ColorFrame_3.Name = "ColorFrame"
+MainGui.ColorFrame_3.Parent = MainGui.Frame5
+MainGui.ColorFrame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_3.BorderSizePixel = 0
+MainGui.ColorFrame_3.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_3.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_35.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_35.Parent = MainGui.ColorFrame_3
+
+MainGui.UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_19.Rotation = -90
+MainGui.UIGradient_19.Parent = MainGui.ColorFrame_3
+
+MainGui.Button_3.Name = "Button"
+MainGui.Button_3.Parent = MainGui.ColorFrame_3
+MainGui.Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_3.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_3.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_3.ZIndex = 2
+MainGui.Button_3.Font = Enum.Font.SourceSans
+MainGui.Button_3.Text = " "
+MainGui.Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_3.TextSize = 14.000
+
+MainGui.UICorner_36.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_36.Parent = MainGui.Button_3
+
+MainGui.OnOrOff_3.Name = "OnOrOff"
+MainGui.OnOrOff_3.Parent = MainGui.AutoCollectOrbs
+MainGui.OnOrOff_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_3.BackgroundTransparency = 1.000
+MainGui.OnOrOff_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_3.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_3.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_3.ZIndex = 2
+MainGui.OnOrOff_3.Font = Enum.Font.Gotham
+MainGui.OnOrOff_3.Text = "Off"
+MainGui.OnOrOff_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_3.TextScaled = true
+MainGui.OnOrOff_3.TextSize = 14.000
+MainGui.OnOrOff_3.TextWrapped = true
+
+MainGui.UICorner_37.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_37.Parent = MainGui.AutoCollectOrbs
+
+MainGui.UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_20.Rotation = -90
+MainGui.UIGradient_20.Parent = MainGui.AutoCollectOrbs
+
+MainGui.FastPets.Name = "FastPets"
+MainGui.FastPets.Parent = MainGui.AutoFarm
+MainGui.FastPets.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.FastPets.BackgroundTransparency = 1.000
+MainGui.FastPets.BorderSizePixel = 0
+MainGui.FastPets.Position = UDim2.new(0.00174203853, 0, 0.501526952, 0)
+MainGui.FastPets.Size = UDim2.new(0.993918538, 1, 0.0867644697, 0)
+
+MainGui.Text_4.Name = "Text"
+MainGui.Text_4.Parent = MainGui.FastPets
+MainGui.Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_4.BackgroundTransparency = 1.000
+MainGui.Text_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_4.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_4.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_4.ZIndex = 2
+MainGui.Text_4.Font = Enum.Font.Gotham
+MainGui.Text_4.Text = "Make Pets Move Fast"
+MainGui.Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_4.TextScaled = true
+MainGui.Text_4.TextSize = 14.000
+MainGui.Text_4.TextWrapped = true
+
+MainGui.WhiteBar_4.Name = "WhiteBar"
+MainGui.WhiteBar_4.Parent = MainGui.FastPets
+MainGui.WhiteBar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_4.BorderSizePixel = 0
+MainGui.WhiteBar_4.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_4.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_21.Rotation = 90
+MainGui.UIGradient_21.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_21.Parent = MainGui.WhiteBar_4
+
+MainGui.Frame6.Name = "Frame6"
+MainGui.Frame6.Parent = MainGui.FastPets
+MainGui.Frame6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame6.BorderSizePixel = 0
+MainGui.Frame6.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame6.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_38.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_38.Parent = MainGui.Frame6
+
+MainGui.UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_22.Rotation = -90
+MainGui.UIGradient_22.Parent = MainGui.Frame6
+
+MainGui.ColorFrame_4.Name = "ColorFrame"
+MainGui.ColorFrame_4.Parent = MainGui.Frame6
+MainGui.ColorFrame_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_4.BorderSizePixel = 0
+MainGui.ColorFrame_4.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_4.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_39.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_39.Parent = MainGui.ColorFrame_4
+
+MainGui.UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_23.Rotation = -90
+MainGui.UIGradient_23.Parent = MainGui.ColorFrame_4
+
+MainGui.Button_4.Name = "Button"
+MainGui.Button_4.Parent = MainGui.ColorFrame_4
+MainGui.Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_4.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_4.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_4.ZIndex = 2
+MainGui.Button_4.Font = Enum.Font.SourceSans
+MainGui.Button_4.Text = " "
+MainGui.Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_4.TextSize = 14.000
+
+MainGui.UICorner_40.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_40.Parent = MainGui.Button_4
+
+MainGui.OnOrOff_4.Name = "OnOrOff"
+MainGui.OnOrOff_4.Parent = MainGui.FastPets
+MainGui.OnOrOff_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_4.BackgroundTransparency = 1.000
+MainGui.OnOrOff_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_4.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_4.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_4.ZIndex = 2
+MainGui.OnOrOff_4.Font = Enum.Font.Gotham
+MainGui.OnOrOff_4.Text = "Off"
+MainGui.OnOrOff_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_4.TextScaled = true
+MainGui.OnOrOff_4.TextSize = 14.000
+MainGui.OnOrOff_4.TextWrapped = true
+
+MainGui.UICorner_41.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_41.Parent = MainGui.FastPets
+
+MainGui.UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_24.Rotation = -90
+MainGui.UIGradient_24.Parent = MainGui.FastPets
+
+MainGui.EnableAutoFarm.Name = "EnableAutoFarm"
+MainGui.EnableAutoFarm.Parent = MainGui.AutoFarm
+MainGui.EnableAutoFarm.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.EnableAutoFarm.BackgroundTransparency = 1.000
+MainGui.EnableAutoFarm.BorderSizePixel = 0
+MainGui.EnableAutoFarm.Position = UDim2.new(0.00174203853, 0, 0.403572857, 0)
+MainGui.EnableAutoFarm.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_5.Name = "Text"
+MainGui.Text_5.Parent = MainGui.EnableAutoFarm
+MainGui.Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_5.BackgroundTransparency = 1.000
+MainGui.Text_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_5.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_5.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_5.ZIndex = 2
+MainGui.Text_5.Font = Enum.Font.Gotham
+MainGui.Text_5.Text = "Enable Auto-Farm"
+MainGui.Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_5.TextScaled = true
+MainGui.Text_5.TextSize = 14.000
+MainGui.Text_5.TextWrapped = true
+
+MainGui.WhiteBar_5.Name = "WhiteBar"
+MainGui.WhiteBar_5.Parent = MainGui.EnableAutoFarm
+MainGui.WhiteBar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_5.BorderSizePixel = 0
+MainGui.WhiteBar_5.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_5.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_25.Rotation = 90
+MainGui.UIGradient_25.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_25.Parent = MainGui.WhiteBar_5
+
+MainGui.Frame7.Name = "Frame7"
+MainGui.Frame7.Parent = MainGui.EnableAutoFarm
+MainGui.Frame7.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame7.BorderSizePixel = 0
+MainGui.Frame7.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame7.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_42.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_42.Parent = MainGui.Frame7
+
+MainGui.UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_26.Rotation = -90
+MainGui.UIGradient_26.Parent = MainGui.Frame7
+
+MainGui.ColorFrame_5.Name = "ColorFrame"
+MainGui.ColorFrame_5.Parent = MainGui.Frame7
+MainGui.ColorFrame_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_5.BorderSizePixel = 0
+MainGui.ColorFrame_5.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_5.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_43.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_43.Parent = MainGui.ColorFrame_5
+
+MainGui.UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_27.Rotation = -90
+MainGui.UIGradient_27.Parent = MainGui.ColorFrame_5
+
+MainGui.Button_5.Name = "Button"
+MainGui.Button_5.Parent = MainGui.ColorFrame_5
+MainGui.Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_5.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_5.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_5.ZIndex = 2
+MainGui.Button_5.Font = Enum.Font.SourceSans
+MainGui.Button_5.Text = " "
+MainGui.Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_5.TextSize = 14.000
+
+MainGui.UICorner_44.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_44.Parent = MainGui.Button_5
+
+MainGui.OnOrOff_5.Name = "OnOrOff"
+MainGui.OnOrOff_5.Parent = MainGui.EnableAutoFarm
+MainGui.OnOrOff_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_5.BackgroundTransparency = 1.000
+MainGui.OnOrOff_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_5.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_5.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_5.ZIndex = 2
+MainGui.OnOrOff_5.Font = Enum.Font.Gotham
+MainGui.OnOrOff_5.Text = "Off"
+MainGui.OnOrOff_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_5.TextScaled = true
+MainGui.OnOrOff_5.TextSize = 14.000
+MainGui.OnOrOff_5.TextWrapped = true
+
+MainGui.UICorner_45.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_45.Parent = MainGui.EnableAutoFarm
+
+MainGui.UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_28.Rotation = -90
+MainGui.UIGradient_28.Parent = MainGui.EnableAutoFarm
+
+MainGui.NoClip.Name = "NoClip"
+MainGui.NoClip.Parent = MainGui.AutoFarm
+MainGui.NoClip.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.NoClip.BackgroundTransparency = 1.000
+MainGui.NoClip.BorderSizePixel = 0
+MainGui.NoClip.Position = UDim2.new(0.00174203853, 0, 0.599480689, 0)
+MainGui.NoClip.Size = UDim2.new(0.993918538, 1, 0.0867646858, 0)
+
+MainGui.Text_6.Name = "Text"
+MainGui.Text_6.Parent = MainGui.NoClip
+MainGui.Text_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_6.BackgroundTransparency = 1.000
+MainGui.Text_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_6.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_6.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_6.ZIndex = 2
+MainGui.Text_6.Font = Enum.Font.Gotham
+MainGui.Text_6.Text = "NoClip"
+MainGui.Text_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_6.TextScaled = true
+MainGui.Text_6.TextSize = 14.000
+MainGui.Text_6.TextWrapped = true
+
+MainGui.WhiteBar_6.Name = "WhiteBar"
+MainGui.WhiteBar_6.Parent = MainGui.NoClip
+MainGui.WhiteBar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_6.BorderSizePixel = 0
+MainGui.WhiteBar_6.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_6.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_29.Rotation = 90
+MainGui.UIGradient_29.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_29.Parent = MainGui.WhiteBar_6
+
+MainGui.Frame8.Name = "Frame8"
+MainGui.Frame8.Parent = MainGui.NoClip
+MainGui.Frame8.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame8.BorderSizePixel = 0
+MainGui.Frame8.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame8.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_46.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_46.Parent = MainGui.Frame8
+
+MainGui.UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_30.Rotation = -90
+MainGui.UIGradient_30.Parent = MainGui.Frame8
+
+MainGui.ColorFrame_6.Name = "ColorFrame"
+MainGui.ColorFrame_6.Parent = MainGui.Frame8
+MainGui.ColorFrame_6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_6.BorderSizePixel = 0
+MainGui.ColorFrame_6.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_6.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_47.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_47.Parent = MainGui.ColorFrame_6
+
+MainGui.UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_31.Rotation = -90
+MainGui.UIGradient_31.Parent = MainGui.ColorFrame_6
+
+MainGui.Button_6.Name = "Button"
+MainGui.Button_6.Parent = MainGui.ColorFrame_6
+MainGui.Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_6.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_6.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_6.ZIndex = 2
+MainGui.Button_6.Font = Enum.Font.SourceSans
+MainGui.Button_6.Text = " "
+MainGui.Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_6.TextSize = 14.000
+
+MainGui.UICorner_48.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_48.Parent = MainGui.Button_6
+
+MainGui.OnOrOff_6.Name = "OnOrOff"
+MainGui.OnOrOff_6.Parent = MainGui.NoClip
+MainGui.OnOrOff_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_6.BackgroundTransparency = 1.000
+MainGui.OnOrOff_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_6.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_6.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_6.ZIndex = 2
+MainGui.OnOrOff_6.Font = Enum.Font.Gotham
+MainGui.OnOrOff_6.Text = "Off"
+MainGui.OnOrOff_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_6.TextScaled = true
+MainGui.OnOrOff_6.TextSize = 14.000
+MainGui.OnOrOff_6.TextWrapped = true
+
+MainGui.UICorner_49.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_49.Parent = MainGui.NoClip
+
+MainGui.UIGradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_32.Rotation = -90
+MainGui.UIGradient_32.Parent = MainGui.NoClip
+
+MainGui.Eggs_2.Name = "Eggs"
+MainGui.Eggs_2.Parent = MainGui.BGSPWN
+MainGui.Eggs_2.Active = true
+MainGui.Eggs_2.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.Eggs_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.Eggs_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Eggs_2.BorderSizePixel = 0
+MainGui.Eggs_2.Position = UDim2.new(0.0289999992, 0, 0.0469999984, 0)
+MainGui.Eggs_2.Size = UDim2.new(0.940999985, 0, 0.899999976, 0)
+MainGui.Eggs_2.Visible = false
+MainGui.Eggs_2.ScrollBarThickness = 4
+
+MainGui.UICorner_50.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_50.Parent = MainGui.Eggs_2
+
+MainGui.UIListLayout_3.Parent = MainGui.Eggs_2
+MainGui.UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_3.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AEggs.Name = "AEggs"
+MainGui.AEggs.Parent = MainGui.Eggs_2
+MainGui.AEggs.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AEggs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEggs.BackgroundTransparency = 1.000
+MainGui.AEggs.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AEggs.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AEggs.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AEggs.ZIndex = 3
+MainGui.AEggs.Font = Enum.Font.Gotham
+MainGui.AEggs.Text = "— Eggs —"
+MainGui.AEggs.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEggs.TextScaled = true
+MainGui.AEggs.TextSize = 14.000
+MainGui.AEggs.TextWrapped = true
+
+MainGui.FastHatch.Name = "FastHatch"
+MainGui.FastHatch.Parent = MainGui.Eggs_2
+MainGui.FastHatch.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.FastHatch.BackgroundTransparency = 1.000
+MainGui.FastHatch.BorderSizePixel = 0
+MainGui.FastHatch.Position = UDim2.new(0.00174203853, 0, 0.599480689, 0)
+MainGui.FastHatch.Size = UDim2.new(0.993918538, 1, 0.0867646858, 0)
+
+MainGui.FastHatch_2.Name = "FastHatch"
+MainGui.FastHatch_2.Parent = MainGui.FastHatch
+MainGui.FastHatch_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.FastHatch_2.BackgroundTransparency = 1.000
+MainGui.FastHatch_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.FastHatch_2.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.FastHatch_2.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.FastHatch_2.ZIndex = 2
+MainGui.FastHatch_2.Font = Enum.Font.Gotham
+MainGui.FastHatch_2.Text = "Extremely Fast Hatch"
+MainGui.FastHatch_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.FastHatch_2.TextScaled = true
+MainGui.FastHatch_2.TextSize = 14.000
+MainGui.FastHatch_2.TextWrapped = true
+
+MainGui.WhiteBar_7.Name = "WhiteBar"
+MainGui.WhiteBar_7.Parent = MainGui.FastHatch
+MainGui.WhiteBar_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_7.BorderSizePixel = 0
+MainGui.WhiteBar_7.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_7.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_33.Rotation = 90
+MainGui.UIGradient_33.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_33.Parent = MainGui.WhiteBar_7
+
+MainGui.OnOrOff_7.Name = "OnOrOff"
+MainGui.OnOrOff_7.Parent = MainGui.FastHatch
+MainGui.OnOrOff_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_7.BackgroundTransparency = 1.000
+MainGui.OnOrOff_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_7.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_7.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_7.ZIndex = 2
+MainGui.OnOrOff_7.Font = Enum.Font.Gotham
+MainGui.OnOrOff_7.Text = "Off"
+MainGui.OnOrOff_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_7.TextScaled = true
+MainGui.OnOrOff_7.TextSize = 14.000
+MainGui.OnOrOff_7.TextWrapped = true
+
+MainGui.UICorner_51.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_51.Parent = MainGui.FastHatch
+
+MainGui.UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_34.Rotation = -90
+MainGui.UIGradient_34.Parent = MainGui.FastHatch
+
+MainGui.Frame8_2.Name = "Frame8"
+MainGui.Frame8_2.Parent = MainGui.FastHatch
+MainGui.Frame8_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame8_2.BorderSizePixel = 0
+MainGui.Frame8_2.Position = UDim2.new(0.760882854, 0, 0.117235482, 0)
+MainGui.Frame8_2.Size = UDim2.new(0.209398687, 0, 0.819451094, 0)
+
+MainGui.UICorner_52.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_52.Parent = MainGui.Frame8_2
+
+MainGui.UIGradient_35.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_35.Rotation = -90
+MainGui.UIGradient_35.Parent = MainGui.Frame8_2
+
+MainGui.ColorFrame_7.Name = "ColorFrame"
+MainGui.ColorFrame_7.Parent = MainGui.Frame8_2
+MainGui.ColorFrame_7.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_7.BorderSizePixel = 0
+MainGui.ColorFrame_7.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_7.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_53.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_53.Parent = MainGui.ColorFrame_7
+
+MainGui.UIGradient_36.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_36.Rotation = -90
+MainGui.UIGradient_36.Parent = MainGui.ColorFrame_7
+
+MainGui.Button_7.Name = "Button"
+MainGui.Button_7.Parent = MainGui.ColorFrame_7
+MainGui.Button_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_7.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_7.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_7.ZIndex = 2
+MainGui.Button_7.Font = Enum.Font.SourceSans
+MainGui.Button_7.Text = " "
+MainGui.Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_7.TextSize = 14.000
+
+MainGui.UICorner_54.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_54.Parent = MainGui.Button_7
+
+MainGui.EggName.Name = "EggName"
+MainGui.EggName.Parent = MainGui.Eggs_2
+MainGui.EggName.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.EggName.BackgroundTransparency = 1.000
+MainGui.EggName.BorderSizePixel = 0
+MainGui.EggName.Position = UDim2.new(0.00242269575, 0, 0, 0)
+MainGui.EggName.Size = UDim2.new(0.993918538, 1, 0.0993452445, 0)
+
+MainGui.Frame9.Name = "Frame9"
+MainGui.Frame9.Parent = MainGui.EggName
+MainGui.Frame9.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame9.BorderSizePixel = 0
+MainGui.Frame9.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame9.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_55.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_55.Parent = MainGui.Frame9
+
+MainGui.UIGradient_37.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_37.Rotation = -90
+MainGui.UIGradient_37.Parent = MainGui.Frame9
+
+MainGui.ColorFrame_8.Name = "ColorFrame"
+MainGui.ColorFrame_8.Parent = MainGui.Frame9
+MainGui.ColorFrame_8.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_8.BorderSizePixel = 0
+MainGui.ColorFrame_8.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_8.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_56.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_56.Parent = MainGui.ColorFrame_8
+
+MainGui.UIGradient_38.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_38.Rotation = -90
+MainGui.UIGradient_38.Parent = MainGui.ColorFrame_8
+
+MainGui.Button_8.Name = "Button"
+MainGui.Button_8.Parent = MainGui.ColorFrame_8
+MainGui.Button_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_8.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_8.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_8.ZIndex = 2
+MainGui.Button_8.Font = Enum.Font.SourceSans
+MainGui.Button_8.Text = " "
+MainGui.Button_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_8.TextSize = 14.000
+
+MainGui.UICorner_57.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_57.Parent = MainGui.Button_8
+
+MainGui.OnOrOff_8.Name = "OnOrOff"
+MainGui.OnOrOff_8.Parent = MainGui.EggName
+MainGui.OnOrOff_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_8.BackgroundTransparency = 1.000
+MainGui.OnOrOff_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_8.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_8.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_8.ZIndex = 2
+MainGui.OnOrOff_8.Font = Enum.Font.Gotham
+MainGui.OnOrOff_8.Text = "Auto Hatch"
+MainGui.OnOrOff_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_8.TextScaled = true
+MainGui.OnOrOff_8.TextSize = 14.000
+MainGui.OnOrOff_8.TextWrapped = true
+
+MainGui.UIGradient_39.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_39.Rotation = -90
+MainGui.UIGradient_39.Parent = MainGui.EggName
+
+MainGui.TextBox.Parent = MainGui.EggName
+MainGui.TextBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainGui.TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.TextBox.BorderSizePixel = 0
+MainGui.TextBox.Position = UDim2.new(0.03553975, 0, 0.0881397948, 0)
+MainGui.TextBox.Size = UDim2.new(0.330006689, 0, 0.7644189, 0)
+MainGui.TextBox.Font = Enum.Font.Gotham
+MainGui.TextBox.PlaceholderColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox.PlaceholderText = "Enter Egg Name"
+MainGui.TextBox.Text = ""
+MainGui.TextBox.TextColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox.TextScaled = true
+MainGui.TextBox.TextSize = 14.000
+MainGui.TextBox.TextWrapped = true
+
+MainGui.UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_5.Color = Color3.fromRGB(81, 81, 81)
+MainGui.UIStroke_5.Transparency = 0.20000000298023224
+MainGui.UIStroke_5.Thickness = 2
+MainGui.UIStroke_5.Parent = MainGui.TextBox
+
+MainGui.UIGradient_40.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_40.Rotation = -90
+MainGui.UIGradient_40.Parent = MainGui.TextBox
+
+MainGui.UICorner_58.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_58.Parent = MainGui.TextBox
+
+MainGui.UICorner_59.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_59.Parent = MainGui.EggName
+
+MainGui.WhiteBar_8.Name = "WhiteBar"
+MainGui.WhiteBar_8.Parent = MainGui.EggName
+MainGui.WhiteBar_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_8.BorderSizePixel = 0
+MainGui.WhiteBar_8.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_8.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_41.Rotation = 90
+MainGui.UIGradient_41.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_41.Parent = MainGui.WhiteBar_8
+
+MainGui.Event_2.Name = "Event"
+MainGui.Event_2.Parent = MainGui.BGSPWN
+MainGui.Event_2.Active = true
+MainGui.Event_2.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.Event_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.Event_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Event_2.BorderSizePixel = 0
+MainGui.Event_2.Position = UDim2.new(0.0289999992, 0, 0.0469999984, 0)
+MainGui.Event_2.Size = UDim2.new(0.940999985, 0, 0.899999976, 0)
+MainGui.Event_2.Visible = false
+MainGui.Event_2.ScrollBarThickness = 4
+
+MainGui.UICorner_60.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_60.Parent = MainGui.Event_2
+
+MainGui.UIListLayout_4.Parent = MainGui.Event_2
+MainGui.UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_4.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AEvent.Name = "AEvent"
+MainGui.AEvent.Parent = MainGui.Event_2
+MainGui.AEvent.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AEvent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEvent.BackgroundTransparency = 1.000
+MainGui.AEvent.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AEvent.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AEvent.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AEvent.ZIndex = 3
+MainGui.AEvent.Font = Enum.Font.Gotham
+MainGui.AEvent.Text = "— Event —"
+MainGui.AEvent.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEvent.TextScaled = true
+MainGui.AEvent.TextSize = 14.000
+MainGui.AEvent.TextWrapped = true
+
+MainGui.AutoEgg.Name = "AutoEgg"
+MainGui.AutoEgg.Parent = MainGui.Event_2
+MainGui.AutoEgg.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.AutoEgg.BackgroundTransparency = 1.000
+MainGui.AutoEgg.BorderSizePixel = 0
+MainGui.AutoEgg.Position = UDim2.new(0.00174203853, 0, 0.109711245, 0)
+MainGui.AutoEgg.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_7.Name = "Text"
+MainGui.Text_7.Parent = MainGui.AutoEgg
+MainGui.Text_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_7.BackgroundTransparency = 1.000
+MainGui.Text_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_7.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_7.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_7.ZIndex = 2
+MainGui.Text_7.Font = Enum.Font.Gotham
+MainGui.Text_7.Text = "Auto Find Eggs"
+MainGui.Text_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_7.TextScaled = true
+MainGui.Text_7.TextSize = 14.000
+MainGui.Text_7.TextWrapped = true
+
+MainGui.WhiteBar_9.Name = "WhiteBar"
+MainGui.WhiteBar_9.Parent = MainGui.AutoEgg
+MainGui.WhiteBar_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_9.BorderSizePixel = 0
+MainGui.WhiteBar_9.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_9.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_42.Rotation = 90
+MainGui.UIGradient_42.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_42.Parent = MainGui.WhiteBar_9
+
+MainGui.Frame23_2.Name = "Frame23"
+MainGui.Frame23_2.Parent = MainGui.AutoEgg
+MainGui.Frame23_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame23_2.BorderSizePixel = 0
+MainGui.Frame23_2.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame23_2.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_61.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_61.Parent = MainGui.Frame23_2
+
+MainGui.UIGradient_43.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_43.Rotation = -90
+MainGui.UIGradient_43.Parent = MainGui.Frame23_2
+
+MainGui.ColorFrame_9.Name = "ColorFrame"
+MainGui.ColorFrame_9.Parent = MainGui.Frame23_2
+MainGui.ColorFrame_9.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_9.BorderSizePixel = 0
+MainGui.ColorFrame_9.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_9.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_62.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_62.Parent = MainGui.ColorFrame_9
+
+MainGui.UIGradient_44.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_44.Rotation = -90
+MainGui.UIGradient_44.Parent = MainGui.ColorFrame_9
+
+MainGui.Button_9.Name = "Button"
+MainGui.Button_9.Parent = MainGui.ColorFrame_9
+MainGui.Button_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_9.Position = UDim2.new(0.0299995895, 0, 0.0280005559, 0)
+MainGui.Button_9.Size = UDim2.new(0.416813254, 0, 1.07000303, 0)
+MainGui.Button_9.ZIndex = 2
+MainGui.Button_9.Font = Enum.Font.SourceSans
+MainGui.Button_9.Text = " "
+MainGui.Button_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_9.TextSize = 14.000
+
+MainGui.UICorner_63.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_63.Parent = MainGui.Button_9
+
+MainGui.OnOrOff_9.Name = "OnOrOff"
+MainGui.OnOrOff_9.Parent = MainGui.AutoEgg
+MainGui.OnOrOff_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_9.BackgroundTransparency = 1.000
+MainGui.OnOrOff_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_9.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_9.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_9.ZIndex = 2
+MainGui.OnOrOff_9.Font = Enum.Font.Gotham
+MainGui.OnOrOff_9.Text = "Off"
+MainGui.OnOrOff_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_9.TextScaled = true
+MainGui.OnOrOff_9.TextSize = 14.000
+MainGui.OnOrOff_9.TextWrapped = true
+
+MainGui.UICorner_64.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_64.Parent = MainGui.AutoEgg
+
+MainGui.UIGradient_45.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_45.Rotation = -90
+MainGui.UIGradient_45.Parent = MainGui.AutoEgg
+
+MainGui.Upgrade.Name = "Upgrade"
+MainGui.Upgrade.Parent = MainGui.Event_2
+MainGui.Upgrade.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.Upgrade.BackgroundTransparency = 1.000
+MainGui.Upgrade.BorderSizePixel = 0
+MainGui.Upgrade.Position = UDim2.new(0.00174203853, 0, 0.20766522, 0)
+MainGui.Upgrade.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_8.Name = "Text"
+MainGui.Text_8.Parent = MainGui.Upgrade
+MainGui.Text_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_8.BackgroundTransparency = 1.000
+MainGui.Text_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_8.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_8.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_8.ZIndex = 2
+MainGui.Text_8.Font = Enum.Font.Gotham
+MainGui.Text_8.Text = "Auto Upgrade Machine"
+MainGui.Text_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_8.TextScaled = true
+MainGui.Text_8.TextSize = 14.000
+MainGui.Text_8.TextWrapped = true
+
+MainGui.WhiteBar_10.Name = "WhiteBar"
+MainGui.WhiteBar_10.Parent = MainGui.Upgrade
+MainGui.WhiteBar_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_10.BorderSizePixel = 0
+MainGui.WhiteBar_10.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_10.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_46.Rotation = 90
+MainGui.UIGradient_46.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_46.Parent = MainGui.WhiteBar_10
+
+MainGui.Frame4_2.Name = "Frame4"
+MainGui.Frame4_2.Parent = MainGui.Upgrade
+MainGui.Frame4_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame4_2.BorderSizePixel = 0
+MainGui.Frame4_2.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame4_2.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_65.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_65.Parent = MainGui.Frame4_2
+
+MainGui.UIGradient_47.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_47.Rotation = -90
+MainGui.UIGradient_47.Parent = MainGui.Frame4_2
+
+MainGui.ColorFrame_10.Name = "ColorFrame"
+MainGui.ColorFrame_10.Parent = MainGui.Frame4_2
+MainGui.ColorFrame_10.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_10.BorderSizePixel = 0
+MainGui.ColorFrame_10.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_10.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_66.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_66.Parent = MainGui.ColorFrame_10
+
+MainGui.UIGradient_48.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_48.Rotation = -90
+MainGui.UIGradient_48.Parent = MainGui.ColorFrame_10
+
+MainGui.Button_10.Name = "Button"
+MainGui.Button_10.Parent = MainGui.ColorFrame_10
+MainGui.Button_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_10.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_10.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_10.ZIndex = 2
+MainGui.Button_10.Font = Enum.Font.SourceSans
+MainGui.Button_10.Text = " "
+MainGui.Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_10.TextSize = 14.000
+
+MainGui.UICorner_67.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_67.Parent = MainGui.Button_10
+
+MainGui.OnOrOff_10.Name = "OnOrOff"
+MainGui.OnOrOff_10.Parent = MainGui.Upgrade
+MainGui.OnOrOff_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_10.BackgroundTransparency = 1.000
+MainGui.OnOrOff_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_10.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_10.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_10.ZIndex = 2
+MainGui.OnOrOff_10.Font = Enum.Font.Gotham
+MainGui.OnOrOff_10.Text = "Off"
+MainGui.OnOrOff_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_10.TextScaled = true
+MainGui.OnOrOff_10.TextSize = 14.000
+MainGui.OnOrOff_10.TextWrapped = true
+
+MainGui.UICorner_68.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_68.Parent = MainGui.Upgrade
+
+MainGui.UIGradient_49.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_49.Rotation = -90
+MainGui.UIGradient_49.Parent = MainGui.Upgrade
+
+MainGui.HugeHunter_2.Name = "HugeHunter"
+MainGui.HugeHunter_2.Parent = MainGui.BGSPWN
+MainGui.HugeHunter_2.Active = true
+MainGui.HugeHunter_2.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.HugeHunter_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.HugeHunter_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.HugeHunter_2.BorderSizePixel = 0
+MainGui.HugeHunter_2.Position = UDim2.new(0.0289999992, 0, 0.0469999984, 0)
+MainGui.HugeHunter_2.Size = UDim2.new(0.940999985, 0, 0.899999976, 0)
+MainGui.HugeHunter_2.Visible = false
+MainGui.HugeHunter_2.ScrollBarThickness = 4
+
+MainGui.UICorner_69.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_69.Parent = MainGui.HugeHunter_2
+
+MainGui.UIListLayout_5.Parent = MainGui.HugeHunter_2
+MainGui.UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_5.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AHugeHunter.Name = "AHugeHunter"
+MainGui.AHugeHunter.Parent = MainGui.HugeHunter_2
+MainGui.AHugeHunter.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AHugeHunter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AHugeHunter.BackgroundTransparency = 1.000
+MainGui.AHugeHunter.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AHugeHunter.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AHugeHunter.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AHugeHunter.ZIndex = 3
+MainGui.AHugeHunter.Font = Enum.Font.Gotham
+MainGui.AHugeHunter.Text = "— Huge Hunter —"
+MainGui.AHugeHunter.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AHugeHunter.TextScaled = true
+MainGui.AHugeHunter.TextSize = 14.000
+MainGui.AHugeHunter.TextWrapped = true
+
+MainGui.EggName_2.Name = "EggName"
+MainGui.EggName_2.Parent = MainGui.HugeHunter_2
+MainGui.EggName_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.EggName_2.BackgroundTransparency = 1.000
+MainGui.EggName_2.BorderSizePixel = 0
+MainGui.EggName_2.Position = UDim2.new(0.00242269575, 0, 0, 0)
+MainGui.EggName_2.Size = UDim2.new(0.993918538, 1, 0.0993452445, 0)
+
+MainGui.WhiteBar_11.Name = "WhiteBar"
+MainGui.WhiteBar_11.Parent = MainGui.EggName_2
+MainGui.WhiteBar_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_11.BorderSizePixel = 0
+MainGui.WhiteBar_11.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_11.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_50.Rotation = 90
+MainGui.UIGradient_50.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_50.Parent = MainGui.WhiteBar_11
+
+MainGui.Frame9_2.Name = "Frame9"
+MainGui.Frame9_2.Parent = MainGui.EggName_2
+MainGui.Frame9_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame9_2.BorderSizePixel = 0
+MainGui.Frame9_2.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame9_2.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_70.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_70.Parent = MainGui.Frame9_2
+
+MainGui.UIGradient_51.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_51.Rotation = -90
+MainGui.UIGradient_51.Parent = MainGui.Frame9_2
+
+MainGui.ColorFrame_11.Name = "ColorFrame"
+MainGui.ColorFrame_11.Parent = MainGui.Frame9_2
+MainGui.ColorFrame_11.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_11.BorderSizePixel = 0
+MainGui.ColorFrame_11.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_11.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_71.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_71.Parent = MainGui.ColorFrame_11
+
+MainGui.UIGradient_52.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_52.Rotation = -90
+MainGui.UIGradient_52.Parent = MainGui.ColorFrame_11
+
+MainGui.Button_11.Name = "Button"
+MainGui.Button_11.Parent = MainGui.ColorFrame_11
+MainGui.Button_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_11.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_11.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_11.ZIndex = 2
+MainGui.Button_11.Font = Enum.Font.SourceSans
+MainGui.Button_11.Text = " "
+MainGui.Button_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_11.TextSize = 14.000
+
+MainGui.UICorner_72.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_72.Parent = MainGui.Button_11
+
+MainGui.OnOrOff_11.Name = "OnOrOff"
+MainGui.OnOrOff_11.Parent = MainGui.EggName_2
+MainGui.OnOrOff_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_11.BackgroundTransparency = 1.000
+MainGui.OnOrOff_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_11.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_11.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_11.ZIndex = 2
+MainGui.OnOrOff_11.Font = Enum.Font.Gotham
+MainGui.OnOrOff_11.Text = "Off"
+MainGui.OnOrOff_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_11.TextScaled = true
+MainGui.OnOrOff_11.TextSize = 14.000
+MainGui.OnOrOff_11.TextWrapped = true
+
+MainGui.UIGradient_53.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_53.Rotation = -90
+MainGui.UIGradient_53.Parent = MainGui.EggName_2
+
+MainGui.TextBox_2.Parent = MainGui.EggName_2
+MainGui.TextBox_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainGui.TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.TextBox_2.BorderSizePixel = 0
+MainGui.TextBox_2.Position = UDim2.new(0.03553975, 0, 0.0881397948, 0)
+MainGui.TextBox_2.Size = UDim2.new(0.330006689, 0, 0.7644189, 0)
+MainGui.TextBox_2.Font = Enum.Font.Gotham
+MainGui.TextBox_2.PlaceholderColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox_2.PlaceholderText = "Enter Huge Name"
+MainGui.TextBox_2.Text = ""
+MainGui.TextBox_2.TextColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox_2.TextScaled = true
+MainGui.TextBox_2.TextSize = 14.000
+MainGui.TextBox_2.TextWrapped = true
+
+MainGui.UIStroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_6.Color = Color3.fromRGB(81, 81, 81)
+MainGui.UIStroke_6.Transparency = 0.20000000298023224
+MainGui.UIStroke_6.Thickness = 2
+MainGui.UIStroke_6.Parent = MainGui.TextBox_2
+
+MainGui.UIGradient_54.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_54.Rotation = -90
+MainGui.UIGradient_54.Parent = MainGui.TextBox_2
+
+MainGui.UICorner_73.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_73.Parent = MainGui.TextBox_2
+
+MainGui.UICorner_74.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_74.Parent = MainGui.EggName_2
+
+MainGui.Misc_2.Name = "Misc"
+MainGui.Misc_2.Parent = MainGui.BGSPWN
+MainGui.Misc_2.Active = true
+MainGui.Misc_2.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.Misc_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.Misc_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Misc_2.BorderSizePixel = 0
+MainGui.Misc_2.Position = UDim2.new(0.0289999992, 0, 0.0469999984, 0)
+MainGui.Misc_2.Size = UDim2.new(0.940999985, 0, 0.899999976, 0)
+MainGui.Misc_2.Visible = false
+MainGui.Misc_2.ScrollBarThickness = 4
+
+MainGui.UICorner_75.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_75.Parent = MainGui.Misc_2
+
+MainGui.UIListLayout_6.Parent = MainGui.Misc_2
+MainGui.UIListLayout_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_6.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AEvent_2.Name = "AEvent"
+MainGui.AEvent_2.Parent = MainGui.Misc_2
+MainGui.AEvent_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AEvent_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEvent_2.BackgroundTransparency = 1.000
+MainGui.AEvent_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AEvent_2.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AEvent_2.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AEvent_2.ZIndex = 3
+MainGui.AEvent_2.Font = Enum.Font.Gotham
+MainGui.AEvent_2.Text = "— MISC —"
+MainGui.AEvent_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AEvent_2.TextScaled = true
+MainGui.AEvent_2.TextSize = 14.000
+MainGui.AEvent_2.TextWrapped = true
+
+MainGui.AutoEgg_2.Name = "AutoEgg"
+MainGui.AutoEgg_2.Parent = MainGui.Misc_2
+MainGui.AutoEgg_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.AutoEgg_2.BackgroundTransparency = 1.000
+MainGui.AutoEgg_2.BorderSizePixel = 0
+MainGui.AutoEgg_2.Position = UDim2.new(0.00174203853, 0, 0.109711245, 0)
+MainGui.AutoEgg_2.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_9.Name = "Text"
+MainGui.Text_9.Parent = MainGui.AutoEgg_2
+MainGui.Text_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_9.BackgroundTransparency = 1.000
+MainGui.Text_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_9.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_9.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_9.ZIndex = 2
+MainGui.Text_9.Font = Enum.Font.Gotham
+MainGui.Text_9.Text = "WORK IN PROGRESS"
+MainGui.Text_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_9.TextScaled = true
+MainGui.Text_9.TextSize = 14.000
+MainGui.Text_9.TextWrapped = true
+
+MainGui.WhiteBar_12.Name = "WhiteBar"
+MainGui.WhiteBar_12.Parent = MainGui.AutoEgg_2
+MainGui.WhiteBar_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_12.BorderSizePixel = 0
+MainGui.WhiteBar_12.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_12.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_55.Rotation = 90
+MainGui.UIGradient_55.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_55.Parent = MainGui.WhiteBar_12
+
+MainGui.Frame23_3.Name = "Frame23"
+MainGui.Frame23_3.Parent = MainGui.AutoEgg_2
+MainGui.Frame23_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame23_3.BorderSizePixel = 0
+MainGui.Frame23_3.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame23_3.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_76.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_76.Parent = MainGui.Frame23_3
+
+MainGui.UIGradient_56.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_56.Rotation = -90
+MainGui.UIGradient_56.Parent = MainGui.Frame23_3
+
+MainGui.ColorFrame_12.Name = "ColorFrame"
+MainGui.ColorFrame_12.Parent = MainGui.Frame23_3
+MainGui.ColorFrame_12.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_12.BorderSizePixel = 0
+MainGui.ColorFrame_12.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_12.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_77.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_77.Parent = MainGui.ColorFrame_12
+
+MainGui.UIGradient_57.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_57.Rotation = -90
+MainGui.UIGradient_57.Parent = MainGui.ColorFrame_12
+
+MainGui.Button_12.Name = "Button"
+MainGui.Button_12.Parent = MainGui.ColorFrame_12
+MainGui.Button_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_12.Position = UDim2.new(0.0299995895, 0, 0.0280005559, 0)
+MainGui.Button_12.Size = UDim2.new(0.416813254, 0, 1.07000303, 0)
+MainGui.Button_12.ZIndex = 2
+MainGui.Button_12.Font = Enum.Font.SourceSans
+MainGui.Button_12.Text = " "
+MainGui.Button_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_12.TextSize = 14.000
+
+MainGui.UICorner_78.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_78.Parent = MainGui.Button_12
+
+MainGui.OnOrOff_12.Name = "OnOrOff"
+MainGui.OnOrOff_12.Parent = MainGui.AutoEgg_2
+MainGui.OnOrOff_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_12.BackgroundTransparency = 1.000
+MainGui.OnOrOff_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_12.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_12.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_12.ZIndex = 2
+MainGui.OnOrOff_12.Font = Enum.Font.Gotham
+MainGui.OnOrOff_12.Text = "Off"
+MainGui.OnOrOff_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_12.TextScaled = true
+MainGui.OnOrOff_12.TextSize = 14.000
+MainGui.OnOrOff_12.TextWrapped = true
+
+MainGui.UICorner_79.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_79.Parent = MainGui.AutoEgg_2
+
+MainGui.UIGradient_58.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_58.Rotation = -90
+MainGui.UIGradient_58.Parent = MainGui.AutoEgg_2
+
+MainGui.Upgrade_2.Name = "Upgrade"
+MainGui.Upgrade_2.Parent = MainGui.Misc_2
+MainGui.Upgrade_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.Upgrade_2.BackgroundTransparency = 1.000
+MainGui.Upgrade_2.BorderSizePixel = 0
+MainGui.Upgrade_2.Position = UDim2.new(0.00174203853, 0, 0.20766522, 0)
+MainGui.Upgrade_2.Size = UDim2.new(0.993918538, 1, 0.0867646337, 0)
+
+MainGui.Text_10.Name = "Text"
+MainGui.Text_10.Parent = MainGui.Upgrade_2
+MainGui.Text_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_10.BackgroundTransparency = 1.000
+MainGui.Text_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_10.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_10.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_10.ZIndex = 2
+MainGui.Text_10.Font = Enum.Font.Gotham
+MainGui.Text_10.Text = "WORK IN PROGRESS"
+MainGui.Text_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_10.TextScaled = true
+MainGui.Text_10.TextSize = 14.000
+MainGui.Text_10.TextWrapped = true
+
+MainGui.WhiteBar_13.Name = "WhiteBar"
+MainGui.WhiteBar_13.Parent = MainGui.Upgrade_2
+MainGui.WhiteBar_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_13.BorderSizePixel = 0
+MainGui.WhiteBar_13.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_13.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_59.Rotation = 90
+MainGui.UIGradient_59.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_59.Parent = MainGui.WhiteBar_13
+
+MainGui.Frame4_3.Name = "Frame4"
+MainGui.Frame4_3.Parent = MainGui.Upgrade_2
+MainGui.Frame4_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame4_3.BorderSizePixel = 0
+MainGui.Frame4_3.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame4_3.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_80.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_80.Parent = MainGui.Frame4_3
+
+MainGui.UIGradient_60.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_60.Rotation = -90
+MainGui.UIGradient_60.Parent = MainGui.Frame4_3
+
+MainGui.ColorFrame_13.Name = "ColorFrame"
+MainGui.ColorFrame_13.Parent = MainGui.Frame4_3
+MainGui.ColorFrame_13.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_13.BorderSizePixel = 0
+MainGui.ColorFrame_13.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_13.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_81.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_81.Parent = MainGui.ColorFrame_13
+
+MainGui.UIGradient_61.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_61.Rotation = -90
+MainGui.UIGradient_61.Parent = MainGui.ColorFrame_13
+
+MainGui.Button_13.Name = "Button"
+MainGui.Button_13.Parent = MainGui.ColorFrame_13
+MainGui.Button_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_13.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_13.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_13.ZIndex = 2
+MainGui.Button_13.Font = Enum.Font.SourceSans
+MainGui.Button_13.Text = " "
+MainGui.Button_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_13.TextSize = 14.000
+
+MainGui.UICorner_82.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_82.Parent = MainGui.Button_13
+
+MainGui.OnOrOff_13.Name = "OnOrOff"
+MainGui.OnOrOff_13.Parent = MainGui.Upgrade_2
+MainGui.OnOrOff_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_13.BackgroundTransparency = 1.000
+MainGui.OnOrOff_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_13.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_13.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_13.ZIndex = 2
+MainGui.OnOrOff_13.Font = Enum.Font.Gotham
+MainGui.OnOrOff_13.Text = "Off"
+MainGui.OnOrOff_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_13.TextScaled = true
+MainGui.OnOrOff_13.TextSize = 14.000
+MainGui.OnOrOff_13.TextWrapped = true
+
+MainGui.UICorner_83.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_83.Parent = MainGui.Upgrade_2
+
+MainGui.UIGradient_62.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_62.Rotation = -90
+MainGui.UIGradient_62.Parent = MainGui.Upgrade_2
+
+MainGui.TradeScam_2.Name = "TradeScam"
+MainGui.TradeScam_2.Parent = MainGui.BGSPWN
+MainGui.TradeScam_2.Active = true
+MainGui.TradeScam_2.ScrollBarImageColor3 = Color3.fromRGB(18, 18, 18)
+MainGui.TradeScam_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MainGui.TradeScam_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.TradeScam_2.BorderSizePixel = 0
+MainGui.TradeScam_2.Position = UDim2.new(0.0289999992, 0, 0.0469999984, 0)
+MainGui.TradeScam_2.Size = UDim2.new(0.940999985, 0, 0.899999976, 0)
+MainGui.TradeScam_2.Visible = false
+MainGui.TradeScam_2.ScrollBarThickness = 4
+
+MainGui.UICorner_84.CornerRadius = UDim.new(0.125, 0)
+MainGui.UICorner_84.Parent = MainGui.TradeScam_2
+
+MainGui.UIListLayout_7.Parent = MainGui.TradeScam_2
+MainGui.UIListLayout_7.HorizontalAlignment = Enum.HorizontalAlignment.Center
+MainGui.UIListLayout_7.Padding = UDim.new(0.00999999978, 0)
+
+MainGui.AHugeHunter_2.Name = "AHugeHunter"
+MainGui.AHugeHunter_2.Parent = MainGui.TradeScam_2
+MainGui.AHugeHunter_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainGui.AHugeHunter_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AHugeHunter_2.BackgroundTransparency = 1.000
+MainGui.AHugeHunter_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.AHugeHunter_2.Position = UDim2.new(0.5, 0, 0.456960082, 0)
+MainGui.AHugeHunter_2.Size = UDim2.new(0.456412166, 0, 0.0453629158, 0)
+MainGui.AHugeHunter_2.ZIndex = 3
+MainGui.AHugeHunter_2.Font = Enum.Font.Gotham
+MainGui.AHugeHunter_2.Text = "— Trade Scam —"
+MainGui.AHugeHunter_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.AHugeHunter_2.TextScaled = true
+MainGui.AHugeHunter_2.TextSize = 14.000
+MainGui.AHugeHunter_2.TextWrapped = true
+
+MainGui.EggName_3.Name = "EggName"
+MainGui.EggName_3.Parent = MainGui.TradeScam_2
+MainGui.EggName_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.EggName_3.BackgroundTransparency = 1.000
+MainGui.EggName_3.BorderSizePixel = 0
+MainGui.EggName_3.Position = UDim2.new(0.00242269575, 0, 0, 0)
+MainGui.EggName_3.Size = UDim2.new(0.993918538, 1, 0.0993452445, 0)
+
+MainGui.WhiteBar_14.Name = "WhiteBar"
+MainGui.WhiteBar_14.Parent = MainGui.EggName_3
+MainGui.WhiteBar_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_14.BorderSizePixel = 0
+MainGui.WhiteBar_14.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_14.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_63.Rotation = 90
+MainGui.UIGradient_63.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_63.Parent = MainGui.WhiteBar_14
+
+MainGui.Frame9_3.Name = "Frame9"
+MainGui.Frame9_3.Parent = MainGui.EggName_3
+MainGui.Frame9_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame9_3.BorderSizePixel = 0
+MainGui.Frame9_3.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame9_3.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_85.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_85.Parent = MainGui.Frame9_3
+
+MainGui.UIGradient_64.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_64.Rotation = -90
+MainGui.UIGradient_64.Parent = MainGui.Frame9_3
+
+MainGui.ColorFrame_14.Name = "ColorFrame"
+MainGui.ColorFrame_14.Parent = MainGui.Frame9_3
+MainGui.ColorFrame_14.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_14.BorderSizePixel = 0
+MainGui.ColorFrame_14.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_14.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_86.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_86.Parent = MainGui.ColorFrame_14
+
+MainGui.UIGradient_65.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_65.Rotation = -90
+MainGui.UIGradient_65.Parent = MainGui.ColorFrame_14
+
+MainGui.Button_14.Name = "Button"
+MainGui.Button_14.Parent = MainGui.ColorFrame_14
+MainGui.Button_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_14.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_14.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_14.ZIndex = 2
+MainGui.Button_14.Font = Enum.Font.SourceSans
+MainGui.Button_14.Text = " "
+MainGui.Button_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_14.TextSize = 14.000
+
+MainGui.UICorner_87.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_87.Parent = MainGui.Button_14
+
+MainGui.OnOrOff_14.Name = "OnOrOff"
+MainGui.OnOrOff_14.Parent = MainGui.EggName_3
+MainGui.OnOrOff_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_14.BackgroundTransparency = 1.000
+MainGui.OnOrOff_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_14.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_14.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_14.ZIndex = 2
+MainGui.OnOrOff_14.Font = Enum.Font.Gotham
+MainGui.OnOrOff_14.Text = "Off"
+MainGui.OnOrOff_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_14.TextScaled = true
+MainGui.OnOrOff_14.TextSize = 14.000
+MainGui.OnOrOff_14.TextWrapped = true
+
+MainGui.UIGradient_66.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_66.Rotation = -90
+MainGui.UIGradient_66.Parent = MainGui.EggName_3
+
+MainGui.TextBox_3.Parent = MainGui.EggName_3
+MainGui.TextBox_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainGui.TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.TextBox_3.BorderSizePixel = 0
+MainGui.TextBox_3.Position = UDim2.new(0.03553975, 0, 0.0881397948, 0)
+MainGui.TextBox_3.Size = UDim2.new(0.330006689, 0, 0.7644189, 0)
+MainGui.TextBox_3.Font = Enum.Font.Gotham
+MainGui.TextBox_3.PlaceholderColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox_3.PlaceholderText = "Enter Player Name"
+MainGui.TextBox_3.Text = ""
+MainGui.TextBox_3.TextColor3 = Color3.fromRGB(242, 242, 242)
+MainGui.TextBox_3.TextScaled = true
+MainGui.TextBox_3.TextSize = 14.000
+MainGui.TextBox_3.TextWrapped = true
+
+MainGui.UIStroke_7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+MainGui.UIStroke_7.Color = Color3.fromRGB(81, 81, 81)
+MainGui.UIStroke_7.Transparency = 0.20000000298023224
+MainGui.UIStroke_7.Thickness = 2
+MainGui.UIStroke_7.Parent = MainGui.TextBox_3
+
+MainGui.UIGradient_67.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_67.Rotation = -90
+MainGui.UIGradient_67.Parent = MainGui.TextBox_3
+
+MainGui.UICorner_88.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_88.Parent = MainGui.TextBox_3
+
+MainGui.UICorner_89.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_89.Parent = MainGui.EggName_3
+
+MainGui.FreezeTrade.Name = "FreezeTrade"
+MainGui.FreezeTrade.Parent = MainGui.TradeScam_2
+MainGui.FreezeTrade.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.FreezeTrade.BackgroundTransparency = 1.000
+MainGui.FreezeTrade.BorderSizePixel = 0
+MainGui.FreezeTrade.Position = UDim2.new(0.00174203853, 0, 0.599480689, 0)
+MainGui.FreezeTrade.Size = UDim2.new(0.993918538, 1, 0.0867646858, 0)
+
+MainGui.Text_11.Name = "Text"
+MainGui.Text_11.Parent = MainGui.FreezeTrade
+MainGui.Text_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_11.BackgroundTransparency = 1.000
+MainGui.Text_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_11.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_11.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_11.ZIndex = 2
+MainGui.Text_11.Font = Enum.Font.Gotham
+MainGui.Text_11.Text = "Freeze Trade"
+MainGui.Text_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_11.TextScaled = true
+MainGui.Text_11.TextSize = 14.000
+MainGui.Text_11.TextWrapped = true
+
+MainGui.WhiteBar_15.Name = "WhiteBar"
+MainGui.WhiteBar_15.Parent = MainGui.FreezeTrade
+MainGui.WhiteBar_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_15.BorderSizePixel = 0
+MainGui.WhiteBar_15.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_15.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_68.Rotation = 90
+MainGui.UIGradient_68.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_68.Parent = MainGui.WhiteBar_15
+
+MainGui.Frame8_3.Name = "Frame8"
+MainGui.Frame8_3.Parent = MainGui.FreezeTrade
+MainGui.Frame8_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame8_3.BorderSizePixel = 0
+MainGui.Frame8_3.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame8_3.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_90.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_90.Parent = MainGui.Frame8_3
+
+MainGui.UIGradient_69.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_69.Rotation = -90
+MainGui.UIGradient_69.Parent = MainGui.Frame8_3
+
+MainGui.ColorFrame_15.Name = "ColorFrame"
+MainGui.ColorFrame_15.Parent = MainGui.Frame8_3
+MainGui.ColorFrame_15.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_15.BorderSizePixel = 0
+MainGui.ColorFrame_15.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_15.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_91.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_91.Parent = MainGui.ColorFrame_15
+
+MainGui.UIGradient_70.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_70.Rotation = -90
+MainGui.UIGradient_70.Parent = MainGui.ColorFrame_15
+
+MainGui.Button_15.Name = "Button"
+MainGui.Button_15.Parent = MainGui.ColorFrame_15
+MainGui.Button_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_15.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_15.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_15.ZIndex = 2
+MainGui.Button_15.Font = Enum.Font.SourceSans
+MainGui.Button_15.Text = " "
+MainGui.Button_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_15.TextSize = 14.000
+
+MainGui.UICorner_92.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_92.Parent = MainGui.Button_15
+
+MainGui.OnOrOff_15.Name = "OnOrOff"
+MainGui.OnOrOff_15.Parent = MainGui.FreezeTrade
+MainGui.OnOrOff_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_15.BackgroundTransparency = 1.000
+MainGui.OnOrOff_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_15.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_15.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_15.ZIndex = 2
+MainGui.OnOrOff_15.Font = Enum.Font.Gotham
+MainGui.OnOrOff_15.Text = "Off"
+MainGui.OnOrOff_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_15.TextScaled = true
+MainGui.OnOrOff_15.TextSize = 14.000
+MainGui.OnOrOff_15.TextWrapped = true
+
+MainGui.UICorner_93.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_93.Parent = MainGui.FreezeTrade
+
+MainGui.UIGradient_71.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_71.Rotation = -90
+MainGui.UIGradient_71.Parent = MainGui.FreezeTrade
+
+MainGui.ForceAccept.Name = "ForceAccept"
+MainGui.ForceAccept.Parent = MainGui.TradeScam_2
+MainGui.ForceAccept.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainGui.ForceAccept.BackgroundTransparency = 1.000
+MainGui.ForceAccept.BorderSizePixel = 0
+MainGui.ForceAccept.Position = UDim2.new(0.00174203853, 0, 0.599480689, 0)
+MainGui.ForceAccept.Size = UDim2.new(0.993918538, 1, 0.0867646858, 0)
+
+MainGui.Text_12.Name = "Text"
+MainGui.Text_12.Parent = MainGui.ForceAccept
+MainGui.Text_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_12.BackgroundTransparency = 1.000
+MainGui.Text_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Text_12.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+MainGui.Text_12.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+MainGui.Text_12.ZIndex = 2
+MainGui.Text_12.Font = Enum.Font.Gotham
+MainGui.Text_12.Text = "Force Accept"
+MainGui.Text_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Text_12.TextScaled = true
+MainGui.Text_12.TextSize = 14.000
+MainGui.Text_12.TextWrapped = true
+
+MainGui.WhiteBar_16.Name = "WhiteBar"
+MainGui.WhiteBar_16.Parent = MainGui.ForceAccept
+MainGui.WhiteBar_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.WhiteBar_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.WhiteBar_16.BorderSizePixel = 0
+MainGui.WhiteBar_16.Position = UDim2.new(0.390470713, 0, 0.14243339, 0)
+MainGui.WhiteBar_16.Size = UDim2.new(0.00158830523, 0, 0.7058056, 0)
+
+MainGui.UIGradient_72.Rotation = 90
+MainGui.UIGradient_72.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+MainGui.UIGradient_72.Parent = MainGui.WhiteBar_16
+
+MainGui.Frame8_4.Name = "Frame8"
+MainGui.Frame8_4.Parent = MainGui.ForceAccept
+MainGui.Frame8_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.Frame8_4.BorderSizePixel = 0
+MainGui.Frame8_4.Position = UDim2.new(0.760882854, 0, 0.11723543, 0)
+MainGui.Frame8_4.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+MainGui.UICorner_94.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_94.Parent = MainGui.Frame8_4
+
+MainGui.UIGradient_73.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_73.Rotation = -90
+MainGui.UIGradient_73.Parent = MainGui.Frame8_4
+
+MainGui.ColorFrame_16.Name = "ColorFrame"
+MainGui.ColorFrame_16.Parent = MainGui.Frame8_4
+MainGui.ColorFrame_16.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.ColorFrame_16.BorderSizePixel = 0
+MainGui.ColorFrame_16.Position = UDim2.new(0, 0, 0.0622308142, 0)
+MainGui.ColorFrame_16.Size = UDim2.new(0.999999881, 0, 0.809064806, 0)
+
+MainGui.UICorner_95.CornerRadius = UDim.new(1, 0)
+MainGui.UICorner_95.Parent = MainGui.ColorFrame_16
+
+MainGui.UIGradient_74.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_74.Rotation = -90
+MainGui.UIGradient_74.Parent = MainGui.ColorFrame_16
+
+MainGui.Button_16.Name = "Button"
+MainGui.Button_16.Parent = MainGui.ColorFrame_16
+MainGui.Button_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.Button_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.Button_16.Position = UDim2.new(0.0299999993, 0, 0.0280000009, 0)
+MainGui.Button_16.Size = UDim2.new(0.416999996, 0, 1.07000005, 0)
+MainGui.Button_16.ZIndex = 2
+MainGui.Button_16.Font = Enum.Font.SourceSans
+MainGui.Button_16.Text = " "
+MainGui.Button_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.Button_16.TextSize = 14.000
+
+MainGui.UICorner_96.CornerRadius = UDim.new(2, 10)
+MainGui.UICorner_96.Parent = MainGui.Button_16
+
+MainGui.OnOrOff_16.Name = "OnOrOff"
+MainGui.OnOrOff_16.Parent = MainGui.ForceAccept
+MainGui.OnOrOff_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_16.BackgroundTransparency = 1.000
+MainGui.OnOrOff_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainGui.OnOrOff_16.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+MainGui.OnOrOff_16.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+MainGui.OnOrOff_16.ZIndex = 2
+MainGui.OnOrOff_16.Font = Enum.Font.Gotham
+MainGui.OnOrOff_16.Text = "Off"
+MainGui.OnOrOff_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainGui.OnOrOff_16.TextScaled = true
+MainGui.OnOrOff_16.TextSize = 14.000
+MainGui.OnOrOff_16.TextWrapped = true
+
+MainGui.UICorner_97.CornerRadius = UDim.new(0.200000003, 0)
+MainGui.UICorner_97.Parent = MainGui.ForceAccept
+
+MainGui.UIGradient_75.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+MainGui.UIGradient_75.Rotation = -90
+MainGui.UIGradient_75.Parent = MainGui.ForceAccept
+
+-- Scripts:
+
+local buttonsubject = MainGui.EggButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = false
+	MainGui.Event_2.Visible = false
+	MainGui.HugeHunter_2.Visible = false
+	MainGui.Eggs_2.Visible = true
+	MainGui.TradeScam_2.Visible = false
+	MainGui.Misc_2.Visible = false
+end)
+
+local buttonsubject = MainGui.AutoFarmButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = true
+	MainGui.Event_2.Visible = false
+	MainGui.HugeHunter_2.Visible = false
+	MainGui.Eggs_2.Visible = false
+	MainGui.TradeScam_2.Visible = false
+	MainGui.Misc_2.Visible = false
+end)
+
+local buttonsubject = MainGui.EventButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = false
+	MainGui.Event_2.Visible = true
+	MainGui.HugeHunter_2.Visible = false
+	MainGui.Eggs_2.Visible = false
+	MainGui.TradeScam_2.Visible = false
+	MainGui.Misc_2.Visible = false
+end)
+
+local buttonsubject = MainGui.HugeHunterButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = false
+	MainGui.Event_2.Visible = false
+	MainGui.HugeHunter_2.Visible = true
+	MainGui.Eggs_2.Visible = false
+	MainGui.TradeScam_2.Visible = false
+	MainGui.Misc_2.Visible = false
+end)
+
+local buttonsubject = MainGui.TradeScamButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = false
+	MainGui.Event_2.Visible = false
+	MainGui.HugeHunter_2.Visible = false
+	MainGui.Eggs_2.Visible = false
+	MainGui.TradeScam_2.Visible = true
+	MainGui.Misc_2.Visible = false
+end)
+
+local buttonsubject = MainGui.MiscButton
+
+buttonsubject.MouseButton1Click:Connect(function()
+	MainGui.AutoFarm.Visible = false
+	MainGui.Event_2.Visible = false
+	MainGui.HugeHunter_2.Visible = false
+	MainGui.Eggs_2.Visible = false
+	MainGui.TradeScam_2.Visible = false
+	MainGui.Misc_2.Visible = true
+end)
+
+local animationsubject = MainGui.AutoFarm1
+local defaultSize = animationsubject.Size
+local defaultSizeX = defaultSize.X.Scale
+local defaultSizeY = defaultSize.Y.Scale
+local addSize = 0.015
+local removeSize = 0.025
+local hoverSizeX = defaultSizeX + addSize
+local hoverSizeY = defaultSizeY + addSize
+local clickSizeX = defaultSizeX - removeSize
+local clickSizeY = defaultSizeY - removeSize
+
+animationsubject.MouseEnter:Connect(function()
+	game.TweenService:Create(animationsubject, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+	script.Parent.UIStroke.Transparency -= 0.5
+end)
+
+animationsubject.MouseLeave:Connect(function()
+	game.TweenService:Create(animationsubject, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	script.Parent.UIStroke.Transparency += 0.5
+end)
+
+animationsubject.MouseButton1Down:Connect(function()
+	game.TweenService:Create(animationsubject, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+end)
+
+animationsubject.MouseButton1Up:Connect(function()
+	game.TweenService:Create(animationsubject, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+end)
+
+local function BSYB_fake_script() -- MainGui.Premium_2.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Premium_2)
+
+	local plr = game.Players.LocalPlayer
+	
+	if  plr.Name == "BellaTvTT" then
+		script.Parent.Image = "rbxassetid://118102801738720"
+	else
+		script.Parent.Image = "rbxassetid://6071020687"
+	end
+end
+coroutine.wrap(BSYB_fake_script)()
+local function HYRWC_fake_script() -- MainGui.Premium.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Premium)
+
+	local plr = game.Players.LocalPlayer
+	
+	if plr.MembershipType == Enum.MembershipType.Premium or plr.Name == "BellaTvTT" then
+		script.Parent.Visible = true
+		print(plr.Name.." has Premium. Rank granted.")
+	else
+		warn(plr.Name.." does not have premium.")
+	end
+end
+coroutine.wrap(HYRWC_fake_script)()
+local function JMFVZK_fake_script() -- MainGui.PlayerInfo.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.PlayerInfo)
+
+	script.Parent.DisplayName.Text = "("..game.Players.LocalPlayer.DisplayName..")"
+	script.Parent.Username.Text = "@"..game.Players.LocalPlayer.Name
+	
+	if game.Players.LocalPlayer.Name == "BellaTvTT" then
+		script.Parent.Rank.Visible = true
+		script.Parent.Username.Text = "Welcome Owner, "..game.Players.LocalPlayer.Name
+	else
+		script.Parent.Username.Text = "@"..game.Players.LocalPlayer.Name
+	end
+end
+coroutine.wrap(JMFVZK_fake_script)()
+local function OVRI_fake_script() -- MainGui.EggButton.open 
+	local script = Instance.new('LocalScript', MainGui.EggButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Eggs.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Eggs.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(OVRI_fake_script)()
+local function PVSUCA_fake_script() -- MainGui.Eggs.Animation 
+	local swoo = Instance.new('LocalScript', MainGui.Eggs)
+
+	local button = swoo
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(PVSUCA_fake_script)()
+local function HUAGS_fake_script() -- MainGui.AutoFarmButton.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', MainGui.AutoFarmButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.AutoFarm.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.AutoFarm.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(HUAGS_fake_script)()
+local function MICVTV_fake_script() -- MainGui.AutoFarm1.Animation 
+	local script = Instance.new('LocalScript', MainGui.AutoFarm1)
+
+	local button = script.Parent
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	local closebtn = MainGui.Close
+
+	closebtn.MouseButton1Click:Connect(function()
+		wait(1)
+		MainGui.MainGui:Destroy()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(MICVTV_fake_script)()
+local function QZKNPU_fake_script() -- MainGui.EventButton.close 
+	local script = Instance.new('LocalScript', MainGui.EventButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Event.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Event.Visible
+	end)
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(QZKNPU_fake_script)()
+local function DVHP_fake_script() -- MainGui.Event.Animation 
+	local script = Instance.new('LocalScript', MainGui.Event)
+
+	local button = script.Parent
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(DVHP_fake_script)()
+local function TAUXMK_fake_script() -- MainGui.HugeHunterButton.ophen 
+	local script = Instance.new('LocalScript', MainGui.HugeHunterButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.HugeHunter.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.HugeHunter.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(TAUXMK_fake_script)()
+local function OAXAIX_fake_script() -- MainGui.HugeHunter.Animation 
+	local script = Instance.new('LocalScript', MainGui.HugeHunter)
+
+	local button = script.Parent
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(OAXAIX_fake_script)()
+local function DQTIO_fake_script() -- MainGui.MiscButton.opin 
+	local script = Instance.new('LocalScript', MainGui.MiscButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Misc.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.Misc.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(DQTIO_fake_script)()
+local function PGXYS_fake_script() -- MainGui.Misc.Animation 
+	local script = Instance.new('LocalScript', MainGui.Misc)
+
+	local button = script.Parent
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(PGXYS_fake_script)()
+local function UTLXY_fake_script() -- MainGui.TradeScamButton.opan 
+	local script = Instance.new('LocalScript', MainGui.TradeScamButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.TradeScam.Visible = not script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.MainFrame.MenuFrame.BGSPWN.TradeScam.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Frame701" to the name of the frame                 ^                      
+end
+coroutine.wrap(UTLXY_fake_script)()
+local function ENHJL_fake_script() -- MainGui.TradeScam.Animation 
+	local script = Instance.new('LocalScript', MainGui.TradeScam)
+
+	local button = script.Parent
+	local defaultSize = button.Size
+	local defaultSizeX = defaultSize.X.Scale
+	local defaultSizeY = defaultSize.Y.Scale
+	local addSize = 0.015
+	local removeSize = 0.025
+	local hoverSizeX = defaultSizeX + addSize
+	local hoverSizeY = defaultSizeY + addSize
+	local clickSizeX = defaultSizeX - removeSize
+	local clickSizeY = defaultSizeY - removeSize
+	
+	button.MouseEnter:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(hoverSizeX, hoverSizeY)}):Play()
+		script.Parent.UIStroke.Transparency -= 0.5
+	end)
+	
+	button.MouseLeave:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+		script.Parent.UIStroke.Transparency += 0.5
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(clickSizeX, clickSizeY)}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		game.TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromScale(defaultSizeX, defaultSizeY)}):Play()
+	end)
+end
+coroutine.wrap(ENHJL_fake_script)()
+local function XPBVUKH_fake_script() -- MainGui.Close.Close 
+	local script = Instance.new('LocalScript', MainGui.Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Visible = not script.Parent.Parent.Parent.Parent.Visible
+	end)
+end
+coroutine.wrap(XPBVUKH_fake_script)()
+local function JZXV_fake_script() -- MainGui.Frame23.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame23)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(JZXV_fake_script)()
+local function GIMVLO_fake_script() -- MainGui.Frame4.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame4)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(GIMVLO_fake_script)()
+local function QWXX_fake_script() -- MainGui.Frame5.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame5)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(QWXX_fake_script)()
+local function VQLA_fake_script() -- MainGui.Frame6.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame6)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(VQLA_fake_script)()
+local function NUJKX_fake_script() -- MainGui.Frame7.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame7)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(NUJKX_fake_script)()
+local function MWCFA_fake_script() -- MainGui.Frame8.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame8)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(MWCFA_fake_script)()
+local function TNKA_fake_script() -- MainGui.Frame8_2.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame8_2)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "Auto-Hatching"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Auto-Hatch"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(TNKA_fake_script)()
+local function JCXYMJ_fake_script() -- MainGui.Frame9.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame9)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "Auto-Hatching"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Auto-Hatch"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(JCXYMJ_fake_script)()
+local function FXFBJ_fake_script() -- MainGui.Frame23_2.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame23_2)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(FXFBJ_fake_script)()
+local function ZFPTP_fake_script() -- MainGui.Frame4_2.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame4_2)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(ZFPTP_fake_script)()
+local function UCPCJ_fake_script() -- MainGui.Frame9_2.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame9_2)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(UCPCJ_fake_script)()
+local function UJLRSC_fake_script() -- MainGui.Frame23_3.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame23_3)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(UJLRSC_fake_script)()
+local function CBHTDIK_fake_script() -- MainGui.Frame4_3.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame4_3)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(CBHTDIK_fake_script)()
+local function KGGCOH_fake_script() -- MainGui.Frame9_3.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame9_3)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(KGGCOH_fake_script)()
+local function WSAI_fake_script() -- MainGui.Frame8_3.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame8_3)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(WSAI_fake_script)()
+local function BNPS_fake_script() -- MainGui.Frame8_4.LocalScript 
+	local script = Instance.new('LocalScript', MainGui.Frame8_4)
+
+	local toggleFrame = script.Parent
+	local colorFrame = toggleFrame:WaitForChild("ColorFrame")
+	local toggleKnob = colorFrame:WaitForChild("Button")
+	local isOn = false
+	
+	local tweenService = game:GetService("TweenService")
+	local knobSize = toggleKnob.Size.X.Offset
+	
+	toggleKnob.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		
+		local targetPosition
+		if isOn then
+			script.Parent.Parent.OnOrOff.Text = "On"
+			targetPosition = UDim2.new(0.79, -(knobSize + 10), 0, -knobSize / 2)
+		else
+			script.Parent.Parent.OnOrOff.Text = "Off"
+			targetPosition = UDim2.new(0, 5, 0, -knobSize / 2)
+		end
+		
+		local tween = tweenService:Create(toggleKnob, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Position = targetPosition
+		})
+		tween:Play()
+	end)
+end
+coroutine.wrap(BNPS_fake_script)()
