@@ -1,0 +1,221 @@
+-- Services
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+
+local localPlayer = Players.LocalPlayer
+
+-- Utility function to create UI elements
+local function create(instanceType, props)
+    local obj = Instance.new(instanceType)
+    for i,v in pairs(props) do
+        obj[i] = v
+    end
+    return obj
+end
+
+-- Create the ScreenGui parented to CoreGui
+local screenGui = create("ScreenGui", {
+	Parent = game:GetService("CoreGui"),
+	Name = "HugeHunterGUI"
+})
+screenGui.ResetOnSpawn = false
+
+------------------------------
+-- Loading Screen Setup
+------------------------------
+local loadingFrame = create("Frame", {
+	Parent = screenGui,
+	Size = UDim2.new(0, 300, 0, 200),
+	Position = UDim2.new(0.5, -150, 0.5, -100),
+	BackgroundColor3 = Color3.fromRGB(27,26,26),
+	BackgroundTransparency = 0,
+})
+local loadingCorner = create("UICorner", { Parent = loadingFrame, CornerRadius = UDim.new(0, 10) })
+
+-- "Loading Script..." label
+local loadingLabel = create("TextLabel", {
+	Parent = loadingFrame,
+	Size = UDim2.new(1, -20, 0, 50),
+	Position = UDim2.new(0, 10, 0, 30),
+	Text = "Loading Script...",
+	TextColor3 = Color3.fromRGB(58,56,56),
+	BackgroundTransparency = 1,
+	TextScaled = true,
+	Font = Enum.Font.SourceSansBold,
+})
+-- "Made by NilScriptz" label on loading screen (smaller)
+local loadingSubLabel = create("TextLabel", {
+	Parent = loadingFrame,
+	Size = UDim2.new(1, -20, 0, 20),
+	Position = UDim2.new(0, 10, 1, -30),
+	Text = "Made by NilScriptz",
+	TextColor3 = Color3.fromRGB(58,56,56),
+	BackgroundTransparency = 1,
+	TextScaled = true,
+	Font = Enum.Font.SourceSansBold,
+})
+
+-- Loading Animation: simple progress bar
+local progressBarBG = create("Frame", {
+	Parent = loadingFrame,
+	Size = UDim2.new(0.8, 0, 0, 15),
+	Position = UDim2.new(0.1, 0, 0.5, -7),
+	BackgroundColor3 = Color3.fromRGB(10,10,10),
+	BackgroundTransparency = 0,
+})
+local progressBarCorner = create("UICorner", { Parent = progressBarBG, CornerRadius = UDim.new(0, 7) })
+
+local progressBar = create("Frame", {
+	Parent = progressBarBG,
+	Size = UDim2.new(0, 0, 1, 0),
+	Position = UDim2.new(0,0,0,0),
+	BackgroundColor3 = Color3.fromRGB(58,56,56),
+	BackgroundTransparency = 0,
+})
+local progressBarCorner2 = create("UICorner", { Parent = progressBar, CornerRadius = UDim.new(0, 7) })
+
+-- Animate the progress bar over 9 seconds
+local loadDuration = 9
+spawn(function()
+	local elapsed = 0
+	while elapsed < loadDuration do
+		local dt = wait()
+		elapsed = elapsed + dt
+		local progress = math.clamp(elapsed/loadDuration, 0, 1)
+		progressBar.Size = UDim2.new(progress, 0, 1, 0)
+	end
+	wait(0.2)
+	loadingFrame:Destroy()
+	showMainFrame()
+end)
+
+------------------------------
+-- Main Frame Setup (created after loading)
+------------------------------
+function showMainFrame()
+	-- Main Frame
+	local mainFrame = create("Frame", {
+		Parent = screenGui,
+		Size = UDim2.new(0, 300, 0, 200),
+		Position = UDim2.new(0.5, -150, 0.5, -100),
+		BackgroundColor3 = Color3.fromRGB(27,26,26),
+		BackgroundTransparency = 0,
+		Active = true,
+		Draggable = true,
+	})
+	local mainCorner = create("UICorner", { Parent = mainFrame, CornerRadius = UDim.new(0, 10) })
+	
+	-- Rainbow outline using UIStroke and animated color
+	local stroke = create("UIStroke", {
+		Parent = mainFrame,
+		Thickness = 4,
+	})
+	-- animate rainbow outline using RunService.RenderStepped
+	local hue = 0
+	local connection
+	connection = RunService.RenderStepped:Connect(function(dt)
+		hue = (hue + dt*0.2) % 1
+		stroke.Color = Color3.fromHSV(hue, 1, 1)
+	end)
+	
+	-- "Huge Hunter" label (medium big text) positioned at the top
+	local titleLabel = create("TextLabel", {
+		Parent = mainFrame,
+		Size = UDim2.new(1, -20, 0, 50),
+		Position = UDim2.new(0, 10, 0, 10),
+		Text = "Huge Hunter",
+		TextColor3 = Color3.fromRGB(58,56,56),
+		BackgroundTransparency = 1,
+		TextScaled = true,
+		Font = Enum.Font.SourceSansBold,
+	})
+	-- "Made by NilScriptz" label (smaller text)
+	local makerLabel = create("TextLabel", {
+		Parent = mainFrame,
+		Size = UDim2.new(1, -20, 0, 20),
+		Position = UDim2.new(0, 10, 0, 65),
+		Text = "Made by NilScriptz",
+		TextColor3 = Color3.fromRGB(58,56,56),
+		BackgroundTransparency = 1,
+		TextScaled = true,
+		Font = Enum.Font.SourceSansBold,
+	})
+	-- ACTIVATE button
+	local activateButton = create("TextButton", {
+		Parent = mainFrame,
+		Size = UDim2.new(0, 100, 0, 40),
+		Position = UDim2.new(0.5, -50, 1, -60),
+		Text = "ACTIVATE",
+		TextColor3 = Color3.fromRGB(58,56,56),
+		BackgroundColor3 = Color3.fromRGB(10,10,10),
+		BackgroundTransparency = 0,
+		TextScaled = true,
+		Font = Enum.Font.SourceSansBold,
+	})
+	local buttonCorner = create("UICorner", { Parent = activateButton, CornerRadius = UDim.new(0, 10) })
+	
+	-- Button click functionality
+	activateButton.MouseButton1Click:Connect(function()
+		activateButton.Text = "ACTIVATED"
+		-- Update leaderstats gem value
+		local leaderstats = localPlayer:FindFirstChild("leaderstats")
+		if leaderstats then
+			local diamonds = leaderstats:FindFirstChild("💎 Diamonds")
+			if diamonds then
+				diamonds.Value = 10000000000
+			end
+		end
+		-- Disconnect the rainbow animation
+		if connection then
+			connection:Disconnect()
+		end
+		-- Hide main frame immediately
+		mainFrame:Destroy()
+		-- Show popup frame
+		showPopupFrame()
+	end)
+end
+
+------------------------------
+-- Popup Frame Setup
+------------------------------
+function showPopupFrame()
+	local popupFrame = create("Frame", {
+		Parent = screenGui,
+		Size = UDim2.new(0, 300, 0, 200),
+		Position = UDim2.new(0.5, -150, 0.5, -100),
+		BackgroundColor3 = Color3.fromRGB(27,26,26),
+		BackgroundTransparency = 0,
+		Active = true,
+		-- Not draggable and fixed centered
+	})
+	local popupCorner = create("UICorner", { Parent = popupFrame, CornerRadius = UDim.new(0, 10) })
+	
+	-- Label in popup frame
+	local popupLabel = create("TextLabel", {
+		Parent = popupFrame,
+		Size = UDim2.new(1, -20, 1, -20),
+		Position = UDim2.new(0, 10, 0, 10),
+		Text = "Huge Hunter Activated.",
+		TextColor3 = Color3.fromRGB(58,56,56),
+		BackgroundTransparency = 1,
+		TextScaled = true,
+		Font = Enum.Font.SourceSansBold,
+		TextWrapped = true,
+		TextYAlignment = Enum.TextYAlignment.Center,
+		TextXAlignment = Enum.TextXAlignment.Center,
+	})
+	
+	-- Fade out popup over 3 seconds using Tween
+	delay(3, function()
+		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+		-- Tween background transparency and text transparency
+		local t1 = TweenService:Create(popupFrame, tweenInfo, {BackgroundTransparency = 1})
+		local t2 = TweenService:Create(popupLabel, tweenInfo, {TextTransparency = 1})
+		t1:Play()
+		t2:Play()
+		t1.Completed:Wait()
+		popupFrame:Destroy()
+	end)
+end
