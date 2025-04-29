@@ -1,0 +1,123 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local MainGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local HugeHunter = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local credits = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+local title2 = Instance.new("TextLabel")
+local UIStroke = Instance.new("UIStroke")
+local UIGradient = Instance.new("UIGradient")
+
+--Properties:
+
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MainGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.253128022, 0, 0.283653855, 0)
+MainFrame.Size = UDim2.new(0.493743986, 0, 0.432692319, 0)
+
+UICorner.CornerRadius = UDim.new(0, 13)
+UICorner.Parent = MainFrame
+
+HugeHunter.Name = "HugeHunter"
+HugeHunter.Parent = MainFrame
+HugeHunter.BackgroundColor3 = Color3.fromRGB(66, 126, 223)
+HugeHunter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HugeHunter.BorderSizePixel = 0
+HugeHunter.Position = UDim2.new(0.165703282, 0, 0.696319044, 0)
+HugeHunter.Size = UDim2.new(0.668593466, 0, 0.15337424, 0)
+HugeHunter.Font = Enum.Font.SourceSansBold
+HugeHunter.Text = "Activate"
+HugeHunter.TextColor3 = Color3.fromRGB(255, 255, 255)
+HugeHunter.TextScaled = true
+HugeHunter.TextSize = 14.000
+HugeHunter.TextTransparency = 0.500
+HugeHunter.TextWrapped = true
+
+UICorner_2.Parent = HugeHunter
+
+credits.Name = "credits"
+credits.Parent = MainFrame
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.306358367, 0, 0.886503041, 0)
+credits.Size = UDim2.new(0.385356456, 0, 0.0705521479, 0)
+credits.Font = Enum.Font.SourceSansBold
+credits.Text = "@NilScriptz"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextScaled = true
+credits.TextSize = 14.000
+credits.TextTransparency = 0.500
+credits.TextWrapped = true
+
+title.Name = "title"
+title.Parent = MainFrame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.254335254, 0, 0.239251152, 0)
+title.Size = UDim2.new(0.491329491, 0, 0.177914113, 0)
+title.Font = Enum.Font.SourceSansBold
+title.Text = "Huge Hunter"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextTransparency = 0.500
+title.TextWrapped = true
+
+title2.Name = "title2"
+title2.Parent = MainFrame
+title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title2.BackgroundTransparency = 1.000
+title2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title2.BorderSizePixel = 0
+title2.Position = UDim2.new(0.477864593, 0, 0.394122422, 0)
+title2.Size = UDim2.new(0.49710983, 0, 0.0649044365, 0)
+title2.Font = Enum.Font.GothamBold
+title2.Text = "By NilScriptz"
+title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title2.TextScaled = true
+title2.TextSize = 14.000
+title2.TextTransparency = 0.500
+title2.TextWrapped = true
+
+UIStroke.Parent = MainFrame
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Thickness = 2.000
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(16, 16, 16)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = UIStroke
+
+-- Scripts:
+
+HugeHunter.MouseButton1Click:Connect(function()
+	MainGui.Enabled = false
+end)
+
+local function RWJZET_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIGradient = script.Parent.UIStroke.UIGradient
+	local runService = game:GetService("RunService")
+	
+	runService.RenderStepped:Connect(function()
+		UIGradient.Rotation += 2
+	end)
+end
+coroutine.wrap(RWJZET_script)()
